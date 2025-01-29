@@ -1,3 +1,4 @@
+@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +6,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --text-color-light-dark: #1f2937
+  --text-color-light-light: #ecf0f3
+  --background-color-light: #ecf0f3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,8 +18,27 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  body {
+    @apply bg-[var(--background-color-light)] text-[var(--text-color-light-dark)];
+  }
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold
+}
+
+h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl
+}
+
+h2 {
+  @apply text-3xl sm:text-4xl
+}
+
+li {
+  @apply cursor-pointer
+}
+
+button {
+  @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
+}
 }
