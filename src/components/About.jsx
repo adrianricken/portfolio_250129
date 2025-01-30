@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Profile from "../../public/assets/profile.png";
 
 const About = () => {
