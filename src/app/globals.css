@@ -8,24 +8,29 @@ html {
 }
 
 :root {
-  --background-color: #ffffff; /* Weiß */
-  --text-color1: #000000; /* Schwarz */
-  --text-color2: #333333; /* Dunkleres Grau */
-  --highlight-color: #0077ff; /* Blau */
+  --background-color: #edede4;
+  --text-color1: #14150f;
+  --text-color2: #53372b;
+  --highlight-color: #1e90ff;
+  --icon-background-color1: #f2e4e4;
+  --icon-background-color2: #ffb3ba;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 [data-theme="dark"] {
   --background-color: #1a1a1a;
-  --text-color1: #f0f0f0;
+  --text-color1: #edede4;
   --text-color2: #cccccc;
   --highlight-color: #ff6600;
+  --icon-background-color1: #f2e4e4;
+  --icon-background-color2: #ffc5cb;
 }
 
 @layer base {
   body {
-    @apply bg-[var(--background-color)] text-[var(--text-color1)];
+    @apply bg-[var(--background-color)];
   }
+
   h1,
   h2,
   h3,

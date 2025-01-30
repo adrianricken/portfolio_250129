@@ -4,19 +4,19 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import Logo from "../../public/assets/logo_lightmode.png";
+import LogoLight from "../../public/assets/logo_lightmode.png";
+import LogoDark from "../../public/assets/logo_darkmode.png";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/navigation";
 
-import LightDarkButton from "./ThemeToggle";
 import ThemeToggle from "./ThemeToggle";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBackground, setNavBackground] = useState("#ecf0f3");
+  const [navBackground, setNavBackground] = useState("#EDEDE4");
   const [linkColor, setLinkColor] = useState("#1f2937");
   const router = useRouter();
 
@@ -29,7 +29,7 @@ const NavBar = () => {
       setNavBackground("transparent");
       setLinkColor("#ecf0f3");
     } else {
-      setNavBackground("#ecf0f3");
+      setNavBackground("#EDEDE4");
       setLinkColor("#1f2937");
     }
   }, [router]);
@@ -60,7 +60,7 @@ const NavBar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/#home" className="ml-4">
-          <Image src={Logo} alt="Logo" width={75} height={50} priority />
+          <Image src={LogoLight} alt="Logo" width={75} height={50} priority />
         </Link>
         <div className="mr-4">
           <ul
@@ -103,7 +103,7 @@ const NavBar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <Image src={Logo} alt="logo" width={87} height={35} />
+                <Image src={LogoLight} alt="logo" width={87} height={35} />
               </Link>
               <div
                 onClick={handleNav}

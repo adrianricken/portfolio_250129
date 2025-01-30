@@ -24,7 +24,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="bottom-4 right-4 p-3 bg-gray-800 text-white rounded-full shadow-lg transition-all duration-300 transform "
+      className="p-2 bg-gray-800 text-white rounded-full shadow-lg transition-all duration-300 transform "
     >
       <span
         className={`transition-transform duration-300 ${
