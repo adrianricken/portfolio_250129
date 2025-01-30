@@ -13,12 +13,17 @@ const Main = () => {
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className="py-4 text-gray-700">
-            Hi, I&#39;m <span className="text-[#5651e5]"> Clint</span>
+            Hey, ich bin <span className="text-[#5651e5]">Adrian</span>! 👋
           </h1>
-          <h1 className="py-2 text-gray-700">A Front-End Web Developer</h1>
+          <h1 className="py-2 text-gray-700">
+            Angehender Junior Frontend Entwickler mit einem Hintergrund in der
+            Architektur.
+          </h1>
           <p className="py-4 px-8 text-gray-600 sm:max-w-[70%] m-auto">
-            I’m focused on building responsive front-end web applications
-            integrating back-end technologies.
+            Ich verbinde Design mit Funktionalität, um intuitive und ästhetische
+            Webanwendungen zu schaffen. Mein Fokus liegt auf minimalistischen,
+            nutzerfreundlichen Interfaces und der technischen Umsetzung
+            kreativer Ideen.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <a

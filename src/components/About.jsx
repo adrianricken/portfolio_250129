@@ -10,24 +10,35 @@ const About = () => {
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
             About
           </p>
-          <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-gray-600">
-            I specialize in building mobile responsive front-end UI applications
-            that connect with API’s and other backend technologies. I’m
-            passionate about learning new technologies and understand there is
-            more than one way to accomplish a task. Though I am most proficient
-            in building front-end applications using HTML, CSS, Javascript, and
-            React, I am a quick learner and can pick up new tech stacks as
-            needed. I believe that being a great developer is not using one
-            specific language, but choosing the best tool for the job.
+
+          <p className="py-2 px-4 text-gray-600 text-justify">
+            Schon immer haben mich Design, Strukturen und Funktionalität
+            fasziniert – deshalb habe ich meinen Bachelor in Architektur an der
+            TU Berlin gemacht. Während meines Studiums und durch diverse
+            Praktika konnte ich tief in die Welt des Entwerfens und
+            Konstruierens eintauchen. Ich lernte, komplexe Konzepte zu
+            durchdenken, detaillierte Pläne zu erstellen und nachhaltige
+            Lösungen für reale Herausforderungen zu entwickeln.
           </p>
-          <p className="py-2 text-gray-600">
-            I started web developement in 2013 managing multiple e-commerce
-            websites on CMS platforms such as WordPress, BigCommerce, and
-            Shopify. I have experience working directly with clients and taking
-            mock wireframes all the way to deployed applications. In my spare
-            time I run Code Commerce, a Youtube channel where I teach web
-            developement and various front-end technologies.
+          <p className="py-2 px-4 text-gray-600 text-justify">
+            Doch mit der Zeit merkte ich, dass mich nicht nur das Gestalten
+            physischer Räume, sondern auch das digitale Erschaffen begeistert.
+            Architektur und Webentwicklung haben viel gemeinsam: Beide erfordern
+            ein Gespür für Ästhetik, Struktur und Nutzerführung – sei es in
+            einem Gebäude oder in einer interaktiven Benutzeroberfläche.
+          </p>
+          <p className="py-2 px-4 text-gray-600 text-justify">
+            Diese Erkenntnis hat mich dazu gebracht, meine Leidenschaft für
+            technische Lösungen und Design in den digitalen Raum zu verlagern.
+            Heute entwickle ich intuitive und minimalistische Webanwendungen,
+            die nicht nur funktional, sondern auch visuell ansprechend sind.
+            Meine architektonische Denkweise hilft mir, Projekte durchdacht zu
+            planen, eine klare Struktur zu schaffen und eine nutzerzentrierte
+            Gestaltung umzusetzen.
+          </p>
+          <p className="py-2 px-4 text-gray-600 text-justify">
+            Ich freue mich darauf, mein Wissen weiter zu vertiefen und
+            innovative digitale Lösungen zu entwickeln!
           </p>
         </div>
         <div className="w-full h-auto m-auto flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">

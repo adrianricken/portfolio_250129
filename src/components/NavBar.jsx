@@ -8,10 +8,28 @@ import Logo from "../../public/assets/logo_lightmode.png";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/navigation";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBackground, setNavBackground] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (
+      router.asPath === "/hideandseek" ||
+      router.asPath === "/artgallery" ||
+      router.asPath === "/weatheractivities"
+    ) {
+      setNavBackground("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBackground("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -30,6 +48,7 @@ const NavBar = () => {
 
   return (
     <div
+      style={{ backgroundColor: `${navBackground}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -41,7 +60,7 @@ const NavBar = () => {
           <Image src={Logo} alt="Logo" width={75} height={50} />
         </Link>
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
