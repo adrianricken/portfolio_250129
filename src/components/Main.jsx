@@ -3,6 +3,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import LightDarkButton from "./ThemeToggle";
 
 const Main = () => {
   return (
@@ -13,11 +14,11 @@ const Main = () => {
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className="py-4 text-gray-700">
-            Hey, ich bin <span className="text-[#5651e5]">Adrian</span>! 👋
+            Hey, ich bin{" "}
+            <span className="text-[var(--highlight-color)]">Adrian</span>! 👋
           </h1>
           <h1 className="py-2 text-gray-700">
-            Angehender Junior Frontend Entwickler mit einem Hintergrund in der
-            Architektur.
+            Junior Frontend Entwickler mit Background in Architektur
           </h1>
           <p className="py-4 px-8 text-gray-600 sm:max-w-[70%] m-auto">
             Ich verbinde Design mit Funktionalität, um intuitive und ästhetische

@@ -10,9 +10,6 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/navigation";
 
-import LightDarkButton from "./ThemeToggle";
-import ThemeToggle from "./ThemeToggle";
-
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -63,11 +60,7 @@ const NavBar = () => {
           <Image src={Logo} alt="Logo" width={75} height={50} priority />
         </Link>
         <div className="mr-4">
-          <ul
-            style={{ color: `${linkColor}` }}
-            className="hidden md:flex items-center"
-          >
-            <ThemeToggle />
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
