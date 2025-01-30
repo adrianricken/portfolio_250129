@@ -5,14 +5,14 @@ import { skills } from "../../data/skillsData";
 const Skills = () => {
   return (
     <div id="skills" className="w-full lg:h-screen p-2">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="py-2 px-4 text-xl tracking-widest uppercase text-[#5651e5]">
+      <div className="px-4 max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+        <p className="py-2 text-xl tracking-widest uppercase text-[#5651e5]">
           Skills
         </p>
-        <p className="py-2 px-4 text-gray-600 text-justify leading-relaxed">
-          Hiermit habe ich bisher gearbeitet:
+        <p className="py-2 text-gray-600 text-justify leading-relaxed">
+          // womit ich bisher gearbeitet habe:
         </p>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-wrap gap-10 justify-around sm:justify-between">
           {skills.map((skill, index) => (
             <SkillCard
               key={index}

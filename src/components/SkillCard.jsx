@@ -3,14 +3,12 @@ import Image from "next/image";
 
 const SkillCard = ({ skillName, skillLogo }) => {
   return (
-    <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-      <div className="grid grid-cols-2 gap-4 justify-center items-center">
+    <div className="w-35 p-6 shadow-xl rounded-[70px] hover:scale-105 ease-in duration-300">
+      <div className="flex flex-col gap-4 justify-center items-center">
         <div className="m-auto">
-          <Image src={skillLogo} width={50} height={50} alt={skillName} />
+          <Image src={skillLogo} width={60} height={60} alt={skillName} />
         </div>
-        <div className="flex flex-col items-center justify-center">
-          <h3>${skillName}</h3>
-        </div>
+        <h3>{skillName}</h3>
       </div>
     </div>
   );
