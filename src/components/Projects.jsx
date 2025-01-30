@@ -14,10 +14,10 @@ const Projects = () => {
         <p className="text-xl tracking-widest uppercase text-[var(--highlight-color)]">
           Projekte
         </p>
-        <p className="py-2 text-[var(--text-color1)] text-justify leading-relaxed">
+        <p className="py-4 text-[var(--text-color1)] text-justify leading-relaxed">
           // meine bisherigen Arbeiten
         </p>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="py-4 grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="Property Finder"
             backgroundImg={propertyImg}

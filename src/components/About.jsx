@@ -6,12 +6,12 @@ const About = () => {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
-          <p className="py-2 px-4 uppercase text-xl tracking-widest text-[var(--highlight-color)]">
+        <div className="col-span-2 px-2">
+          <p className="py-4 uppercase text-xl tracking-widest text-[var(--highlight-color)]">
             About
           </p>
 
-          <p className="py-2 px-4 text-gray-600 text-justify leading-relaxed">
+          <p className="py-2 text-[var(--text-color1)] text-justify leading-relaxed">
             Schon immer haben mich Design, Strukturen und Funktionalität
             fasziniert – weshalb ich einen Bachelor in Architektur an der TU
             Berlin gemacht habe. Während meines Studiums und durch diverse
@@ -20,12 +20,12 @@ const About = () => {
             durchdenken, detaillierte Pläne zu erstellen und nachhaltige
             Lösungen für reale Herausforderungen zu entwickeln.
           </p>
-          <p className="py-2 px-4 text-gray-600 text-justify leading-relaxed">
+          <p className="py-2 text-[var(--text-color1)] text-justify leading-relaxed">
             Architektur und Webentwicklung haben viel gemeinsam: Beide erfordern
             ein Gespür für Ästhetik, Struktur und Nutzerführung – sei es in
             einem Gebäude oder in einer interaktiven Benutzeroberfläche.
           </p>
-          <p className="py-2 px-4 text-gray-600 text-justify leading-relaxed">
+          <p className="py-2 text-[var(--text-color1)] text-justify leading-relaxed">
             Diese Erkenntnis hat mich dazu gebracht, meine Leidenschaft für
             technische Lösungen und Design in den digitalen Raum zu verlagern.
             Mit dem Abschluss des Web Development bootcamp bei Spiced habe ich

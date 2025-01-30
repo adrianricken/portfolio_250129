@@ -60,7 +60,14 @@ const NavBar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/#home" className="ml-4">
-          <Image src={LogoLight} alt="Logo" width={75} height={50} priority />
+          <Image
+            src={LogoLight}
+            alt="Logo"
+            width={75}
+            height={50}
+            className="mx-4"
+            priority
+          />
         </Link>
         <div className="mr-4">
           <ul
@@ -112,12 +119,8 @@ const NavBar = () => {
                 <AiOutlineClose />
               </div>
             </div>
-            <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">
-                Lets build something legendary together
-              </p>
-            </div>
           </div>
+
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/#home" onClick={handleNav}>
@@ -134,17 +137,17 @@ const NavBar = () => {
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
+              <p className="uppercase tracking-widest text-[var(--highlight-color)]">
                 Lets connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300">
                   <a
                     href="https://www.linkedin.com/in/adrian-ricken/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <FaLinkedinIn />
+                    <FaLinkedinIn className="text-[var(--icon-color)]" />
                   </a>
                 </div>
                 <a
@@ -152,18 +155,18 @@ const NavBar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300">
                     <FaGithub />
                   </div>
                 </a>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  ease-in duration-300">
                   <AiOutlineMail />
                 </div>
                 <a
                   target="blank"
                   href="https://app.enhancv.com/share/7c236387/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300">
                     <BsFillPersonLinesFill />
                   </div>
                 </a>

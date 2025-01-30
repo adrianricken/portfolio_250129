@@ -21,9 +21,9 @@ html {
   --background-color: #1a1a1a;
   --text-color1: #edede4;
   --text-color2: #cccccc;
-  --highlight-color: #ff6600;
+  --highlight-color: #1e90ff;
   --icon-background-color1: #f2e4e4;
-  --icon-background-color2: #ffc5cb;
+  --icon-background-color2: #ffb3ba;
 }
 
 @layer base {
