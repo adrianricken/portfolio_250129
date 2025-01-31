@@ -7,7 +7,7 @@ const About = () => {
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2 px-2">
-          <p className="py-4 uppercase text-xl tracking-widest text-[var(--highlight-color)]">
+          <p className="pt-8 pb-4 uppercase text-xl tracking-widest text-[var(--highlight-color)]">
             About
           </p>
 
@@ -35,7 +35,7 @@ const About = () => {
             umzusetzen.
           </p>
         </div>
-        <div className="w-full h-auto m-auto flex items-center justify-center px-4 hover:scale-105 ease-in duration-300">
+        <div className="w-full h-auto m-auto flex items-center justify-center px-4">
           <Image src={Profile} alt="profile picture" />
         </div>
       </div>

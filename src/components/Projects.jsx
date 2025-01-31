@@ -1,10 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import propertyImg from "../../public/assets/tailwind.png";
-import cryptoImg from "../../public/assets/tailwind.png";
-import netflixImg from "../../public/assets/tailwind.png";
-import twitchImg from "../../public/assets/tailwind.png";
+import hideAndSeekImg from "../../public/assets/hideandseek.png";
+import artGalleryImg from "../../public/assets/tailwind.png";
+import weatherActivitiesImg from "../../public/assets/tailwind.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -15,25 +12,13 @@ const Projects = () => {
           Projekte
         </p>
         <p className="py-4 text-[var(--text-color1)] text-justify leading-relaxed">
-          // meine bisherigen Arbeiten
+          // Auswahl bisheriger Arbeiten
         </p>
-        <div className="py-4 grid md:grid-cols-2 gap-8">
+        <div className="py-4 grid md:grid-cols-3 gap-8">
           <ProjectItem
-            title="Property Finder"
-            backgroundImg={propertyImg}
+            title="Hide and Seek"
+            backgroundImg={hideAndSeekImg}
             projectUrl="/hideandseek"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Crypto App"
-            backgroundImg={cryptoImg}
-            projectUrl="/artgallery"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Netflix App"
-            backgroundImg={netflixImg}
-            projectUrl="/weatheractivities"
             tech="React JS"
           />
         </div>
