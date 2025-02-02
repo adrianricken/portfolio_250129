@@ -71,10 +71,7 @@ const NavBar = () => {
           />
         </Link>
         <div className="mr-4">
-          <ul
-            // style={{ color: `${linkColor}` }}
-            className="hidden md:flex items-center bg-[var(--icon-background-color)] text-[var(--text-color1)]"
-          >
+          <ul className="hidden md:flex items-center bg-[var(--icon-background-color)] text-[var(--text-color1)]">
             <ThemeToggle />
             <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
@@ -104,8 +101,8 @@ const NavBar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-              : "fixed left-[-100%] h-screen top-0 p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[var(--background-color)] p-10 ease-in duration-500 text-[var(--text-color1)]"
+              : "fixed left-[-100%] h-screen top-0 p-10 ease-in duration-500 bg-[var(--background-color)]"
           }
         >
           <div>

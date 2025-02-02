@@ -24,13 +24,9 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full transition-all duration-300 transform "
+      className="p-2 rounded-full transition-all duration-300 ease-in-out "
     >
-      <span
-        className={`transition-transform duration-300 ${
-          theme === "light" ? "rotate-0" : "rotate-180"
-        }`}
-      >
+      <span className="transition-ease-in-out duration-300">
         {theme === "light" ? (
           <HiOutlineMoon size={24} className="text-[var(--text-color1)]" />
         ) : (
