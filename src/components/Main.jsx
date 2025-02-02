@@ -11,10 +11,10 @@ const Main = () => {
         <div>
           <h1 className="py-4 text-[var(--text-color1)]">
             Hey, ich bin
-            <span className="text-[var(--highlight-color)]"> Adrian</span> :-)
+            <span className="text-[var(--highlight-color)]"> Adrian</span> !
           </h1>
           <h1 className="py-2 text-[var(--text-color1)]">
-            Junior Frontend Entwickler mit Background in Architektur
+            Junior Web Developer mit Background in Architektur
           </h1>
           <p className="py-4 px-8 text-[var(--text-color2)] sm:max-w-[70%] m-auto">
             Ich verbinde Design mit Funktionalität, um intuitive und ästhetische

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { HiOutlineSun, HiOutlineMoon } from "react-icons/hi";
+import { motion, AnimatePresence } from "framer-motion";
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState("light");
@@ -24,15 +25,31 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full transition-all duration-300 ease-in-out "
+      className="p-2 rounded-full transition-all duration-200 ease-in-out"
     >
-      <span className="transition-ease-in-out duration-300">
+      <AnimatePresence mode="wait">
         {theme === "light" ? (
-          <HiOutlineMoon size={24} className="text-[var(--text-color1)]" />
+          <motion.span
+            key="moon"
+            initial={{ opacity: 0, scale: 0.8, rotate: -90 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            exit={{ opacity: 0, scale: 0.8, rotate: 90 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
+            <HiOutlineMoon size={24} className="text-[var(--text-color1)]" />
+          </motion.span>
         ) : (
-          <HiOutlineSun size={24} />
+          <motion.span
+            key="sun"
+            initial={{ opacity: 0, scale: 0.8, rotate: 90 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            exit={{ opacity: 0, scale: 0.8, rotate: -90 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+          >
+            <HiOutlineSun size={24} className="text-[var(--text-color1)]" />
+          </motion.span>
         )}
-      </span>
+      </AnimatePresence>
     </button>
   );
 };
