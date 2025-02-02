@@ -4,8 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import LogoLight from "../../public/assets/logo_lightmode.png";
-import LogoDark from "../../public/assets/logo_darkmode.png";
+import Logo from "../../public/assets/logo.png";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -16,23 +15,23 @@ import ThemeToggle from "./ThemeToggle";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBackground, setNavBackground] = useState("#EDEDE4");
-  const [linkColor, setLinkColor] = useState("#1f2937");
-  const router = useRouter();
+  // const [navBackground, setNavBackground] = useState("#EDEDE4");
+  // const [linkColor, setLinkColor] = useState("#1f2937");
+  // const router = useRouter();
 
-  useEffect(() => {
-    if (
-      router.asPath === "/hideandseek" ||
-      router.asPath === "/artgallery" ||
-      router.asPath === "/weatheractivities"
-    ) {
-      setNavBackground("transparent");
-      setLinkColor("#ecf0f3");
-    } else {
-      setNavBackground("#EDEDE4");
-      setLinkColor("#1f2937");
-    }
-  }, [router]);
+  // useEffect(() => {
+  //   if (
+  //     router.asPath === "/hideandseek" ||
+  //     router.asPath === "/artgallery" ||
+  //     router.asPath === "/weatheractivities"
+  //   ) {
+  //     setNavBackground("transparent");
+  //     setLinkColor("#ecf0f3");
+  //   } else {
+  //     setNavBackground("#EDEDE4");
+  //     setLinkColor("#1f2937");
+  //   }
+  // }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -51,17 +50,19 @@ const NavBar = () => {
 
   return (
     <div
-      style={{ backgroundColor: `${navBackground}` }}
+      style={{
+        boxShadow: shadow ? "0px 4px 10px var(--text-color1)" : "none",
+      }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100]"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed w-full h-20 shadow-xl z-[100] bg-[var(--background-color)]"
+          : "fixed w-full h-20 z-[100] bg-[var(--background-color)]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[var(--background-color)]">
         <Link href="/#home" className="ml-4">
           <Image
-            src={LogoLight}
+            src={Logo}
             alt="Logo"
             width={75}
             height={50}
@@ -71,8 +72,8 @@ const NavBar = () => {
         </Link>
         <div className="mr-4">
           <ul
-            style={{ color: `${linkColor}` }}
-            className="hidden md:flex items-center"
+            // style={{ color: `${linkColor}` }}
+            className="hidden md:flex items-center bg-[var(--icon-background-color)] text-[var(--text-color1)]"
           >
             <ThemeToggle />
             <Link href="/#home">
@@ -91,7 +92,7 @@ const NavBar = () => {
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden">
-            <AiOutlineMenu size={25} />
+            <AiOutlineMenu size={25} className="text-[var(--text-color1)]" />
           </div>
         </div>
       </div>
@@ -110,7 +111,7 @@ const NavBar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <Image src={LogoLight} alt="logo" width={87} height={35} />
+                <Image src={Logo} alt="logo" width={87} height={35} />
               </Link>
               <div
                 onClick={handleNav}
@@ -123,6 +124,7 @@ const NavBar = () => {
 
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
+              <ThemeToggle />
               <Link href="/#home" onClick={handleNav}>
                 <li className="py-4 text-sm">Home</li>
               </Link>

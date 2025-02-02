@@ -5,7 +5,7 @@ import Profile from "../../public/assets/profile_normal.png";
 const About = () => {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 px-2">
         <div className="col-span-2 px-2">
           <p className="pt-8 pb-4 uppercase text-xl tracking-widest text-[var(--highlight-color)]">
             About
@@ -13,8 +13,7 @@ const About = () => {
 
           <p className="py-2 text-[var(--text-color1)] text-justify leading-relaxed">
             Schon immer haben mich Design, Strukturen und Funktionalität
-            fasziniert – weshalb ich einen Bachelor in Architektur an der TU
-            Berlin gemacht habe. Während meines Studiums und durch diverse
+            fasziniert. Während meines Architektur-Studiums und diversen
             Praktika konnte ich tief in die Welt des Entwerfens und
             Konstruierens eintauchen. Ich habe gelernt, komplexe Konzepte zu
             durchdenken, detaillierte Pläne zu erstellen und nachhaltige
