@@ -60,13 +60,13 @@ const NavBar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[var(--background-color)]">
-        <Link href="/#home" className="ml-4">
+        <Link href="/#home" className="ml-2">
           <Image
             src={Logo}
             alt="Logo"
             width={75}
             height={50}
-            className="mx-4"
+            className="mx-2"
             priority
           />
         </Link>
@@ -117,7 +117,7 @@ const NavBar = () => {
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
               >
-                <AiOutlineClose />
+                <AiOutlineClose className="text[var(--text-color1)]" />
               </div>
             </div>
           </div>
