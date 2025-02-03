@@ -11,25 +11,26 @@ export default async function ProjectDetailPage({ params }) {
 
   return (
     <>
-      <div className="w-screen h-[50vh] relative">
+      <div className="w-screen h-[50vh] relative flex justify-center items-center text-white pt-30">
+        <h1 className="z-12 absolute">Hide and Seek</h1>
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
         <Image
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={project.image}
+          src={project.imageDetail}
           alt="/"
         />
       </div>
 
       <div className="max-w-[1240px] flex flex-col m-auto">
         <div className="container mx-auto px-4">
-          <p className="text-justify block pt-10 pb-10 text-[var(--text-color1)]">
-            {project.description}
+          <p className="text-justify block pt-10 text-[var(--text-color1)]">
+            {project.descriptionLong}
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold mb-4 text-[var(--highlight-color)]">
+              <h2 className="text-3xl font-bold mb-4 text-[var(--highlight-color)] pt-12">
                 What I Did
               </h2>
               <p className="leading-relaxed text-[var(--text-color1)]">
@@ -38,7 +39,7 @@ export default async function ProjectDetailPage({ params }) {
               </p>
             </div>
             <div>
-              <h2 className="text-3xl font-bold mb-4 text-[var(--highlight-color)]">
+              <h2 className="text-3xl font-bold mb-4 text-[var(--highlight-color)] pt-12">
                 Why I Did It
               </h2>
               <p className="leading-relaxed text-[var(--text-color1)]">
@@ -46,13 +47,13 @@ export default async function ProjectDetailPage({ params }) {
                 the value it adds.
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div className="mt-16">
+          <div className="pt-12">
             <h2 className="text-3xl font-bold mb-4 text-[var(--highlight-color)]">
-              Technologies Used
+              Techs
             </h2>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 text-[var(--text-color2)]">
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
@@ -65,7 +66,7 @@ export default async function ProjectDetailPage({ params }) {
           </div>
         </div>
 
-        <div className="py-16">
+        <div className="pt-12">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-left mb-4 text-[var(--highlight-color)]">
               Key Features
@@ -80,17 +81,19 @@ export default async function ProjectDetailPage({ params }) {
                   <h3 className="text-xl font-semibold mb-2">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600">
+                  {/* <p className="text-gray-600">
                     A brief description of this feature and its importance.
-                  </p>
+                  </p> */}
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold mb-6">Challenges & Solutions</h2>
+        <div className="container mx-auto px-4 pt-12">
+          <h2 className="text-3xl font-bold mb-6 text-[var(--highlight-color)]">
+            Challenges & Solutions
+          </h2>
           <div className="space-y-8">
             {[
               {
@@ -113,21 +116,23 @@ export default async function ProjectDetailPage({ params }) {
         <div className="text-white py-16">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl font-bold mb-6 text-[var(--text-color1)]">
-              Want to See More?
+              Mehr sehen?
             </h2>
-            <p className="text-gray-300 mb-8 text-[var(--text-color2)]">
+            <p className="mb-8 text-[var(--text-color2)]">
               Check out the live project or explore the code on GitHub.
             </p>
             <div className="flex justify-center gap-4">
               <a
-                href="#"
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition"
+                href={project.demo}
+                target="_blank"
+                className="bg-blue-600 text-white px-8 py-3 rounded-[30px] hover:bg-blue-700 transition"
               >
                 Live Project
               </a>
               <a
-                href="#"
-                className="bg-gray-700 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition"
+                href={project.github}
+                target="_blank"
+                className="bg-gray-700 text-white px-8 py-3 rounded-[30px] hover:bg-gray-800 transition"
               >
                 GitHub Repo
               </a>

@@ -4,9 +4,9 @@ import { projects } from "../../data/projects";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full p-2">
-      <div className="max-w-[1240px] mx-auto px-4">
-        <p className="pt-22 text-4xl tracking-widest uppercase text-[var(--highlight-color)]">
+    <div id="projects" className="w-full p-2 sm:h-screen flex items-center">
+      <div className="max-w-[1240px] mx-auto px-4 py-6">
+        <p className="pt-16 text-4xl tracking-widest uppercase text-[var(--highlight-color)]">
           Projekte
         </p>
 
