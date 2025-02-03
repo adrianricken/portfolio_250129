@@ -17,8 +17,10 @@ const Main = () => {
             Junior Web Developer mit Background in Architektur
           </h1>
           <p className="py-4 px-8 text-[var(--text-color2)] sm:max-w-[70%] m-auto">
-            Ich freue mich, dass du dir die Zeit nimmst dich auf meiner kleinen
-            bescheidenen Portfolio Webseite umzuschauen.
+            Ich verbinde Design mit Funktionalität, um intuitive und ästhetische
+            Webanwendungen zu schaffen. Mein Fokus liegt auf minimalistischen,
+            nutzerfreundlichen Interfaces und der technischen Umsetzung
+            kreativer Ideen.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <a
