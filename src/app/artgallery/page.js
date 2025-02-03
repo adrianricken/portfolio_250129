@@ -1,7 +1,19 @@
+import NavBar from "@/components/NavBar";
 import React from "react";
 
 const artgallery = () => {
-  return <div>artgallery</div>;
+  return (
+    <>
+      <NavBar />
+      <h1>TEST</h1>
+      <h1>TEST</h1>
+      <h1>TEST</h1>
+      <h1>TEST</h1>
+      <h1>TEST</h1>
+      <h1>TEST</h1>
+      <h1>TEST</h1>
+    </>
+  );
 };
 
 export default artgallery;

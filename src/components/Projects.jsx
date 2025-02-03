@@ -15,18 +15,20 @@ const Projects = () => {
         <div className="grid md:grid-cols-3 gap-80">
           <ThreeDCardDemo
             ProjectName={"Hide and Seek"}
-            ProjectDescription={"Test"}
+            ProjectDescription={
+              "Mein Capstone project für das Web Development Bootcamp"
+            }
             ProjectLink={"/hideandseek"}
           />
           <ThreeDCardDemo
             ProjectName={"Art Gallery App"}
             ProjectDescription={"Test"}
-            ProjectLink={"/hideandseek"}
+            ProjectLink={"/artgallery"}
           />
           <ThreeDCardDemo
             ProjectName={"Weather activities App"}
             ProjectDescription={"Test"}
-            ProjectLink={"/hideandseek"}
+            ProjectLink={"/weatheractivities"}
           />
         </div>
       </div>
