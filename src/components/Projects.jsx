@@ -19,12 +19,12 @@ const Projects = () => {
             ProjectLink={"/hideandseek"}
           />
           <ThreeDCardDemo
-            ProjectName={"Hide and Seek"}
+            ProjectName={"Art Gallery App"}
             ProjectDescription={"Test"}
             ProjectLink={"/hideandseek"}
           />
           <ThreeDCardDemo
-            ProjectName={"Hide and Seek"}
+            ProjectName={"Weather activities App"}
             ProjectDescription={"Test"}
             ProjectLink={"/hideandseek"}
           />

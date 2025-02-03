@@ -13,7 +13,7 @@ html {
   --text-color2: #53372b;
   --highlight-color: #1e90ff;
   --icon-background-color1: #f2e4e4;
-  --icon-background-color2: #ffb3ba;
+  --icon-background-color2: #595959;
   --gradient: linear-gradient(30deg, #ffb3ba, #edede4, #ffb3ba, #edede4);
 }
 
@@ -31,7 +31,7 @@ html {
   body {
     @apply bg-gradient-to-r;
     background: var(--gradient);
-    background-size: 4000% 4000%;
+    background-size: 400% 400%;
     animation: waveGradient 10s ease infinite;
   }
 

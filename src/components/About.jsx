@@ -34,7 +34,7 @@ const About = () => {
             umzusetzen.
           </p>
         </div>
-        <div className="w-full h-auto m-auto flex items-center justify-center px-4 py-6">
+        <div className="w-full h-auto m-auto flex items-center justify-center px-4 py-8">
           <Image src={Profile} alt="profile picture" />
         </div>
       </div>
