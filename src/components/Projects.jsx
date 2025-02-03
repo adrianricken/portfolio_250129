@@ -10,13 +10,14 @@ const Projects = () => {
           Projekte
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-10">
           {projects.map((project) => (
             <ThreeDCardDemo
               key={project.id}
               ProjectName={project.name}
               ProjectDescription={project.description}
               ProjectLink={`/projects/${project.id}`}
+              ProjectImage={project.image}
             />
           ))}
         </div>

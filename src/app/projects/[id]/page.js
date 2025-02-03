@@ -12,13 +12,13 @@ export default async function ProjectDetailPage({ params }) {
   return (
     <>
       <div className="w-screen h-[50vh] relative flex justify-center items-center text-white pt-30">
-        <h1 className="z-12 absolute">Hide and Seek</h1>
+        <h1 className="z-12 absolute">{project.name}</h1>
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
         <Image
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={project.imageDetail}
+          src={project.imageDetail ? project.imageDetail : project.image}
           alt="/"
         />
       </div>

@@ -6,15 +6,15 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import Link from "next/link";
-import hideAndSeekImg from "../../public/assets/hideandseek.png";
 
 export function ThreeDCardDemo({
   ProjectName,
   ProjectDescription,
   ProjectLink,
+  ProjectImage,
 }) {
   return (
-    <CardContainer className="inter-var">
+    <CardContainer className="inter-var max-w-[380px]">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border flex flex-col items-center">
         <CardItem
           translateZ="50"
@@ -31,7 +31,7 @@ export function ThreeDCardDemo({
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <Image
-            src={hideAndSeekImg}
+            src={ProjectImage}
             height="1000"
             width="1000"
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"

@@ -12,8 +12,8 @@ Darüber hinaus bietet Hide and Seek die Möglichkeit, Parks als Favoriten zu sp
 
 In einem nächsten Schritt soll die Plattform um einen Event-Bereich erweitert werden. So werden anstehende Veranstaltungen wie Flohmärkte, Konzerte oder Sportturniere direkt bei den jeweiligen Parks angezeigt – damit alle relevanten Informationen für den perfekten Parkbesuch an einem Ort verfügbar sind.`,
     technologies: ["React", "Next.js", "MongoDB", "Leaflet / OpenStreetMap"],
-    image: "/assets/hideandseek.png",
-    imageDetail: "/assets/hideandseekDetail.png",
+    image: "/projects/hide-and-seek.png",
+    imageDetail: "/projects/hideandseekDetail.png",
     github: "https://github.com/adrianricken/hide-and-seek",
     demo: "https://hide-and-seek-pi.vercel.app",
     features: [
@@ -27,9 +27,14 @@ In einem nächsten Schritt soll die Plattform um einen Event-Bereich erweitert w
     name: "Art Gallery App",
     description: "Eine Kunstgallerie-App zum Durchsuchen von Kunstwerken.",
     technologies: ["React", "Next.js", "MongoDB"],
-    image: "/assets/hideandseek.png",
+    image: "/projects/art-gallery.png",
     github: "https://github.com/adrianricken/adrian-andreas-art-gallery-app",
     demo: "https://adrian-andreas-art-gallery-app.vercel.app/",
+    features: [
+      { title: "Responsives Design", icon: "🖥️" },
+      { title: "User Authentifikation", icon: "🔐" },
+      { title: "Live Filter", icon: "⚡" },
+    ],
   },
   {
     id: "weather-activities",
@@ -37,8 +42,13 @@ In einem nächsten Schritt soll die Plattform um einen Event-Bereich erweitert w
     description:
       "Wetterdaten mit einer (fiktiven) API abrufen und passende Aktivitäten anzeigen und hinzufügen.",
     technologies: ["React", "Next.js", "Weather API"],
-    image: "/assets/weatheractivities.png",
+    image: "/projects/weather-activities.png",
     github: "https://github.com/yourusername/weather-activities",
     demo: "https://weather-activities-demo.com",
+    features: [
+      { title: "Responsives Design", icon: "🖥️" },
+      { title: "User Authentifikation", icon: "🔐" },
+      { title: "Live Filter", icon: "⚡" },
+    ],
   },
 ];
