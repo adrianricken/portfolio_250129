@@ -27,18 +27,22 @@ export default async function ProjectDetailPage({ params }) {
       </div>
 
       <div className="container mx-auto px-6">
-        <p className="pb-10">{project.description}</p>
+        <p className="pb-10 text-[var(--text-color1)]">{project.description}</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl font-bold mb-6">What I Did</h2>
-            <p className="text-gray-700 leading-relaxed">
+            <h2 className="text-3xl font-bold mb-6 text-[var(--highlight-color)]">
+              What I Did
+            </h2>
+            <p className="leading-relaxed text-[var(--text-color1)]">
               A detailed explanation of your role, the challenges you faced, and
               how you contributed to the project.
             </p>
           </div>
           <div>
-            <h2 className="text-3xl font-bold mb-6">Why I Did It</h2>
-            <p className="text-gray-700 leading-relaxed">
+            <h2 className="text-3xl font-bold mb-6 text-[var(--highlight-color)]">
+              Why I Did It
+            </h2>
+            <p className="leading-relaxed text-[var(--text-color1)]">
               Explain the purpose of the project, the problem it solves, or the
               value it adds.
             </p>
