@@ -1,5 +1,3 @@
-// src/app/projects/[id]/page.js
-
 import { projects } from "../../../../data/projects";
 import Image from "next/image";
 
@@ -13,26 +11,23 @@ export default async function ProjectDetailPage({ params }) {
 
   return (
     <>
-      <div className="bg-gray-900 text-white py-20">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 py-10">
-            {project.name}
-          </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-8">
-            A short and catchy description of the project.
-          </p>
-          <div className="rounded-lg overflow-hidden shadow-2xl">
-            <Image
-              src={project.image}
-              alt={project.name}
-              width={4000}
-              height={4000}
-              className="w-full h-auto"
-            />
-          </div>
+      <div className="w-screen h-[50vh] relative">
+        <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
+        <Image
+          className="absolute z-1"
+          layout="fill"
+          objectFit="cover"
+          src={project.image}
+          alt="/"
+        />
+        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+          <h2 className="py-2">Property Finders</h2>
+          <h3>React JS / Tailwind / Firebase</h3>
         </div>
       </div>
-      <div className="container mx-auto px-6 py-16">
+
+      <div className="container mx-auto px-6">
+        <p className="pb-10">{project.description}</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl font-bold mb-6">What I Did</h2>

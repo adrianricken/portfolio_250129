@@ -3,8 +3,6 @@ import { ThreeDCardDemo } from "./ThreeDCardDemo";
 import { projects } from "../../data/projects";
 
 const Projects = () => {
-  console.log(projects);
-
   return (
     <div id="projects" className="w-full p-2">
       <div className="max-w-[1240px] mx-auto px-4">
