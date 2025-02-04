@@ -38,7 +38,7 @@ export const projects = [
       "Kunstgallerie-App zum Durchsuchen von Kunstwerken mit Favoritenfunktion.",
     descriptionLong:
       "Diese Galerie-App soll eine Sammlung von Kunstwerken aus einer externen API anzeigen. Der Fokus liegt dabei auf einer strukturierten und modularen Umsetzung in Next.js, mit besonderem Augenmerk auf das Fetching und die Verwaltung von Zustandsdaten. Ziele der App: Kunstwerke mit Bild und relevanten Informationen aus einer API abrufen und anzeigen. Nutzerinteraktionen ermöglichen, indem zusätzliche Informationen zu Kunstwerken gespeichert werden. Eine gut strukturierte Codebasis mit wiederverwendbaren Komponenten und sauberem Zustandshandling aufbauen. Best Practices in Next.js und React umsetzen, insbesondere beim Laden von Daten und der Handhabung von Bildern mit next/image. Kollaboratives Arbeiten mit GitHub und die Nutzung von Branches und Pull Requests für eine effiziente Zusammenarbeit im Team.",
-    technologies: ["React", "Next.js", "MongoDB"],
+    technologies: ["React", "Next.js"],
     image: "/projects/art-gallery.png",
     github: "https://github.com/adrianricken/adrian-andreas-art-gallery-app",
     demo: "https://adrian-andreas-art-gallery-app.vercel.app/",
@@ -70,7 +70,7 @@ export const projects = [
       "App, um Aktivitäten zu speichern und je nach aktuellem Wetter Optionen anzuzeigen.",
     descriptionLong:
       "Diese App nutzt eine Wetter-API, um basierend auf den aktuellen Wetterbedingungen passende Aktivitäten aus einer vordefinierten Liste vorzuschlagen. Zusätzlich können Nutzer eigene Aktivitäten hinzufügen und löschen. Ziele der App: Wetterdaten von einer API abrufen und in der App verwenden. Basierend auf dem Wetter passende Aktivitäten anzeigen. Nutzern ermöglichen, Aktivitäten zur Liste hinzuzufügen und zu löschen (CRUD-Funktionalität). Die Kernlogik in React umsetzen, insbesondere den Umgang mit Zustand und Benutzerinteraktionen üben. Eine strukturierte Codebasis mit klaren Komponenten und sauberem Zustandshandling erstellen.",
-    technologies: ["React", "Next.js", "Weather API"],
+    technologies: ["React", "Next.js"],
     image: "/projects/weather-activities.png",
     github: "https://github.com/adrianricken/adrian-paulina-weather-app",
     demo: "https://paulina-adrian-weather-app.vercel.app/",

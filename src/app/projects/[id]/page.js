@@ -29,7 +29,29 @@ export default async function ProjectDetailPage({ params }) {
             {project.descriptionLong}
           </p>
 
-          <div className="pt-12">
+          <div className="pt-20">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl font-bold text-left mb-4 text-[var(--highlight-color)]">
+                Key Features
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {project.features.map((feature) => (
+                  <div
+                    key={feature.title}
+                    className="bg-white p-8 rounded-full shadow-lg text-center hover:scale-105 ease-in duration-300"
+                  >
+                    <span className="text-4xl mb-4">{feature.icon}</span>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-600">{feature.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-15">
             <h2 className="text-3xl font-bold mb-4 text-[var(--highlight-color)]">
               Tech
             </h2>
@@ -37,7 +59,7 @@ export default async function ProjectDetailPage({ params }) {
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="bg-white text-black px-4 py-2 rounded-full text-sm"
+                  className="bg-white text-black px-4 py-2 rounded-full text-sm shadow-lg"
                 >
                   {tech}
                 </span>
@@ -46,36 +68,12 @@ export default async function ProjectDetailPage({ params }) {
           </div>
         </div>
 
-        <div className="pt-12">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-left mb-4 text-[var(--highlight-color)]">
-              Key Features
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {project.features.map((feature) => (
-                <div
-                  key={feature.title}
-                  className="bg-white p-8 rounded-lg shadow-md text-center"
-                >
-                  <span className="text-4xl mb-4">{feature.icon}</span>
-                  <h3 className="text-xl font-semibold mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600">{feature.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className="text-white py-16">
+        <div className="text-white py-25">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl font-bold mb-6 text-[var(--text-color1)]">
-              Mehr sehen?
+              Mehr sehen:
             </h2>
-            <p className="mb-8 text-[var(--text-color2)]">
-              Check out the live project or explore the code on GitHub.
-            </p>
+
             <div className="flex justify-center gap-4">
               <a
                 href={project.demo}
