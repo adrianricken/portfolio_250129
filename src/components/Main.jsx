@@ -11,16 +11,17 @@ const Main = () => {
         <div>
           <h1 className="py-4 text-[var(--text-color1)]">
             Hey, ich bin
-            <span className="text-[var(--highlight-color)]"> Adrian</span> !
+            <span className="text-[var(--highlight-color)]"> Adrian</span> ,
           </h1>
           <h1 className="py-2 text-[var(--text-color1)]">
-            Junior Web Developer mit Background in Architektur
+            Junior Web Developer
+            <br />
+            mit Background in Architektur
           </h1>
           <p className="py-4 px-8 text-[var(--text-color2)] sm:max-w-[70%] m-auto">
-            Ich verbinde Design mit Funktionalität, um intuitive und ästhetische
-            Webanwendungen zu schaffen. Mein Fokus liegt auf minimalistischen,
-            nutzerfreundlichen Interfaces und der technischen Umsetzung
-            kreativer Ideen.
+            Mit einem Auge für Design lege ich besonders viel Wert auf klare
+            Gestaltung, gute Usability und die technische Umsetzung kreativer
+            Konzepte.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <a
