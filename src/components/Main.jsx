@@ -2,6 +2,21 @@ import React from "react";
 import Image from "next/image";
 import Profile from "../../public/assets/profile_normal.png";
 
+// alles in einem div?
+// <div className="min-height:100vh width:auto relative align-center flex flex-col flex-nowrap height:min-content p-0"
+// align-items: center;
+// background-color: #fff;
+// display: flex;
+// flex-direction: column;
+// flex-wrap: nowrap;
+// gap: 0px;
+// height: min-content;
+// justify-content: flex-start;
+// overflow: hidden;
+// padding: 0;
+// position: relative;
+// https://danielsun.space/
+
 const Main = () => {
   return (
     <>
