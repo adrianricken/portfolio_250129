@@ -1,102 +1,75 @@
-import Link from "next/link";
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import Profile from "../../public/assets/profile_normal.png";
 
 const Main = () => {
   return (
     <>
-      <div>
-        <div
-          id="about"
-          className="name-container absolute flex flex-col justify-between items-center h-screen lg:visible invisible left-5"
-        >
-          <span className="text-5xl font-bold md:hidden">ADRIAN</span>
+      <div id="about" className="h-screen w-full relative">
+        <div className="px-5 h-full relative">
+          {/* Vertikale Buchstaben (Desktop) */}
+          <div className="absolute flex flex-col justify-between items-center h-full md:visible invisible text-[var(--text-color1)]">
+            {["A", "d", "r", "i", "a", "n"].map((letter, index) => (
+              <span key={index} className="letter text-9xl font-bold">
+                {letter}
+              </span>
+            ))}
+          </div>
+
+          <div
+            className="flex justify-between h-full md:invisible pt-5 px-2
+          "
+          >
+            {["A", "d", "r", "i", "a", "n"].map((letter, index) => (
+              <span key={index} className="letter text-5xl font-bold">
+                {letter}
+              </span>
+            ))}
+          </div>
+
+          {/* <div className="relative top-0">
+            <p>Hey, das bin ich:</p>
+          </div> */}
+
+          <Image
+            src={Profile}
+            alt="profile picture"
+            width={400}
+            className="absolute bottom-0 left-1/2 -translate-x-1/2 px-5"
+          />
         </div>
-        <div
-          id="about"
-          className="name-container absolute flex flex-col justify-between items-center h-screen lg:visible invisible left-5"
-        >
-          <span className="letter text-9xl font-bold transform">A</span>
-          <span className="letter text-9xl font-bold transform">D</span>
-          <span className="letter text-9xl font-bold transform">R</span>
-          <span className="letter text-9xl font-bold transform">I</span>
-          <span className="letter text-9xl font-bold transform">A</span>
-          <span className="letter text-9xl font-bold transform">N</span>
-        </div>
-        <Image
-          src={Profile}
-          alt="profile picture"
-          height={500}
-          className="absolute bottom-0 left-1/2 -translate-x-1/2"
-        />
-      </div>
-      <div className="absolute m-auto md:grid grid-cols-3 gap-8 px-2 right-3 ">
-        <p className="text-justify leading-relaxed">
-          Design, Struktur und Funktionalität haben mich schon immer fasziniert.
-          Mein Architekturstudium hat mir das Denken in Systemen, präzise
-          Planung und nutzerzentrierte Gestaltung beigebracht – Fähigkeiten, die
-          auch in der Webentwicklung essenziell sind. Mit dem Web Development
-          Bootcamp bei Spiced habe ich diesen Weg in die digitale Welt
-          erweitert, um durchdachte, ästhetische und funktionale Lösungen zu
-          schaffen.
-        </p>
       </div>
 
-      <div id="home" className="w-full h-screen text-center">
-        <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-          {/* <div>
-          <h1 className="py-4 text-[var(--text-color1)]">
-            Hey, ich bin
-            <span className="text-[var(--highlight-color)]"> Adrian</span> ,
-          </h1>
-          <h1 className="py-2 text-[var(--text-color1)]">
-            Junior Web Developer
-            <br />
-            mit Background in Architektur
-          </h1>
-          <p className="py-4 px-8 text-[var(--text-color2)] sm:max-w-[70%] m-auto">
-            Mit einem Auge für Design lege ich besonders viel Wert auf klare
-            Gestaltung, gute Usability und die technische Umsetzung kreativer
-            Konzepte.
-          </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <a
-              href="https://www.linkedin.com/in/adrian-ricken/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="rounded-full shadow-lg p-6 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color1)] hover:bg-[var(--icon-background-color2)]">
-                <FaLinkedinIn />
-              </div>
-            </a>
-            <a
-              href="https://github.com/adrianricken"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="rounded-full shadow-lg p-6 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color1)] hover:bg-[var(--icon-background-color2)]">
-                <FaGithub />
-              </div>
-            </a>
-            <Link href="/#contact">
-              <div className="rounded-full shadow-lg p-6 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color1)] hover:bg-[var(--icon-background-color2)]">
-                <AiOutlineMail />
-              </div>
-            </Link>
-            <a
-              target="blank"
-              href="https://app.enhancv.com/share/7c236387/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
-            >
-              <div className="rounded-full shadow-lg p-6 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color1)] hover:bg-[var(--icon-background-color2)]">
-                <BsFillPersonLinesFill />
-              </div>
-            </a>
+      <hr className="mx-auto" />
+
+      {/* Textblock */}
+      <div className="h-[50vh] w-screen items-center grid grid-cols-1 lg:grid-cols-2 justify-between max-w-[1240xp">
+        <p className="text-justify leading-relaxed text-xl font-bold text-[var(--text-color1)] w-[400px] px-5">
+          Design, Struktur und Funktionalität haben mich schon immer fasziniert.
+          Mein Architekturstudium hat mir das Denken in Systemen, präzise
+          Planung und nutzerzentrierte Gestaltung beigebracht. Mit dem Web
+          Development Bootcamp bei Spiced habe ich meinen Weg in die digitale
+          Welt angetreten, um durchdachte, ästhetische und funktionale Lösungen
+          zu schaffen.
+        </p>
+        <div>
+          <hr />
+          <div className="h-10 flex items-center justify-between pr-10">
+            <p>TEST</p>
+            <p>TEST</p>
           </div>
-        </div> */}
+          <hr />
+          <div className="h-10 flex items-center justify-between">
+            <p>TEST</p>
+            <p>TEST</p>
+          </div>
+          <hr />
+          <div className="h-10 flex items-center justify-between">
+            <p>TEST</p>
+            <p>TEST</p>
+          </div>
+
+          <hr />
         </div>
       </div>
     </>
