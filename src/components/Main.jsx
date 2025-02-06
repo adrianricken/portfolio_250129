@@ -12,20 +12,20 @@ const Main = () => {
       <div>
         <div
           id="about"
-          class="name-container absolute flex flex-col justify-between items-center h-screen lg:visible invisible left-5"
+          className="name-container absolute flex flex-col justify-between items-center h-screen lg:visible invisible left-5"
         >
           <span className="text-5xl font-bold md:hidden">ADRIAN</span>
         </div>
         <div
           id="about"
-          class="name-container absolute flex flex-col justify-between items-center h-screen lg:visible invisible left-5"
+          className="name-container absolute flex flex-col justify-between items-center h-screen lg:visible invisible left-5"
         >
-          <span class="letter text-9xl font-bold transform">A</span>
-          <span class="letter text-9xl font-bold transform">D</span>
-          <span class="letter text-9xl font-bold transform">R</span>
-          <span class="letter text-9xl font-bold transform">I</span>
-          <span class="letter text-9xl font-bold transform">A</span>
-          <span class="letter text-9xl font-bold transform">N</span>
+          <span className="letter text-9xl font-bold transform">A</span>
+          <span className="letter text-9xl font-bold transform">D</span>
+          <span className="letter text-9xl font-bold transform">R</span>
+          <span className="letter text-9xl font-bold transform">I</span>
+          <span className="letter text-9xl font-bold transform">A</span>
+          <span className="letter text-9xl font-bold transform">N</span>
         </div>
         <Image
           src={Profile}

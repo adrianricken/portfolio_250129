@@ -14,12 +14,6 @@ const NavBar = () => {
   return (
     <div className="fixed h-[50px] w-[300px] flex items-center justify-around bg-black rounded-3xl left-1/2 -translate-x-1/2 bottom-[30px] z-10 text-gray-400 text-lg">
       <ThemeToggle />
-      {/* <Link
-        href="/#home"
-        className="transition duration-300 hover:text-white hover:[text-shadow:0_0_10px_rgba(255,255,255,0.8)]"
-      >
-        Home
-      </Link> */}
       <Link
         href="/#about"
         className="transition duration-300 hover:text-white hover:[text-shadow:0_0_10px_rgba(255,255,255,0.8)]"
