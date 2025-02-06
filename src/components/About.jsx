@@ -11,14 +11,7 @@ const About = () => {
             About
           </p>
 
-          <p className="py-2 text-[var(--text-color1)] text-justify leading-relaxed">
-            Schon immer haben mich Design, Strukturen und Funktionalität
-            fasziniert. Während meines Architektur-Studiums und diversen
-            Praktika konnte ich tief in die Welt des Entwerfens und
-            Konstruierens eintauchen. Ich habe gelernt, komplexe Konzepte zu
-            durchdenken, detaillierte Pläne zu erstellen und nachhaltige
-            Lösungen für reale Herausforderungen zu entwickeln.
-          </p>
+          <p className="py-2 text-[var(--text-color1)] text-justify leading-relaxed"></p>
           <p className="py-2 text-[var(--text-color1)] text-justify leading-relaxed">
             Architektur und Webentwicklung haben viel gemeinsam: Beide erfordern
             ein Gespür für Ästhetik, Struktur und Nutzerführung – sei es in
