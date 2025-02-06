@@ -12,7 +12,7 @@ import ThemeToggle from "./ThemeToggle";
 
 const NavBar = () => {
   return (
-    <div className="fixed h-[50px] w-[300px] flex items-center justify-around bg-black rounded-3xl left-1/2 -translate-x-1/2 bottom-[50px] z-10 text-gray-400 text-lg">
+    <div className="fixed h-[50px] w-[300px] flex items-center justify-around bg-black rounded-3xl left-1/2 -translate-x-1/2 bottom-[30px] z-10 text-gray-400 text-lg">
       <ThemeToggle />
       {/* <Link
         href="/#home"

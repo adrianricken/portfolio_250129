@@ -10,7 +10,7 @@ html {
 }
 
 :root {
-  --background-color: #edede4;
+  --background-color: #d9d9d9;
   --text-color1: #14150f;
   --text-color2: #53372b;
   --highlight-color: #1e90ff;
@@ -21,7 +21,7 @@ html {
 
 [data-theme="dark"] {
   --background-color: #595959;
-  --text-color1: #edede4;
+  --text-color1: #d9d9d9;
   --text-color2: #cccccc;
   --highlight-color: #1e90ff;
   --icon-background-color1: #f2e4e4;
@@ -32,9 +32,11 @@ html {
 @layer base {
   body {
     @apply bg-gradient-to-r;
-    background: var(--gradient);
-    background-size: 400% 400%;
-    animation: waveGradient 10s ease infinite;
+    /* @apply bg-gradient-to-r; */
+    background: var(--background-color);
+    /* background: var(--gradient); */
+    /* background-size: 400% 400%; */
+    /* animation: waveGradient 10s ease infinite; */
   }
 
   @keyframes waveGradient {

@@ -3,12 +3,52 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Image from "next/image";
+import Profile from "../../public/assets/profile_normal.png";
 
 const Main = () => {
   return (
-    <div id="home" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-        <div>
+    <>
+      <div>
+        <div
+          id="about"
+          class="name-container absolute flex flex-col justify-between items-center h-screen lg:visible invisible left-5"
+        >
+          <span className="text-5xl font-bold md:hidden">ADRIAN</span>
+        </div>
+        <div
+          id="about"
+          class="name-container absolute flex flex-col justify-between items-center h-screen lg:visible invisible left-5"
+        >
+          <span class="letter text-9xl font-bold transform">A</span>
+          <span class="letter text-9xl font-bold transform">D</span>
+          <span class="letter text-9xl font-bold transform">R</span>
+          <span class="letter text-9xl font-bold transform">I</span>
+          <span class="letter text-9xl font-bold transform">A</span>
+          <span class="letter text-9xl font-bold transform">N</span>
+        </div>
+        <Image
+          src={Profile}
+          alt="profile picture"
+          height={500}
+          className="absolute bottom-0 left-1/2 -translate-x-1/2"
+        />
+      </div>
+      <div className="absolute m-auto md:grid grid-cols-3 gap-8 px-2 right-3 ">
+        <p className="text-justify leading-relaxed">
+          Design, Struktur und Funktionalität haben mich schon immer fasziniert.
+          Mein Architekturstudium hat mir das Denken in Systemen, präzise
+          Planung und nutzerzentrierte Gestaltung beigebracht – Fähigkeiten, die
+          auch in der Webentwicklung essenziell sind. Mit dem Web Development
+          Bootcamp bei Spiced habe ich diesen Weg in die digitale Welt
+          erweitert, um durchdachte, ästhetische und funktionale Lösungen zu
+          schaffen.
+        </p>
+      </div>
+
+      <div id="home" className="w-full h-screen text-center">
+        <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+          {/* <div>
           <h1 className="py-4 text-[var(--text-color1)]">
             Hey, ich bin
             <span className="text-[var(--highlight-color)]"> Adrian</span> ,
@@ -56,9 +96,10 @@ const Main = () => {
               </div>
             </a>
           </div>
+        </div> */}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
