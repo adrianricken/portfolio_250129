@@ -5,13 +5,20 @@
 @import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/utilities.css" layer(utilities);
 
-html {
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--background-color);
   scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
-  -webkit-font-smooting: inherit;
+  -webkit-font-smoothing: antialiased;
 }
 
 :root {
@@ -21,7 +28,7 @@ html {
   --highlight-color: #1e90ff;
   --icon-background-color1: #f2e4e4;
   --icon-background-color2: #ffb3ba;
-  --gradient: linear-gradient(30deg, #ffb3ba, #edede4, #ffb3ba, #edede4);
+  --navBar-border: #d9d9d9;
 }
 
 [data-theme="dark"] {
@@ -31,31 +38,10 @@ html {
   --highlight-color: #1e90ff;
   --icon-background-color1: #f2e4e4;
   --icon-background-color2: #ffb3ba;
-  --gradient: linear-gradient(30deg, #595959, #14150f, #595959, #14150f);
+  --navBar-border: #d9d9d9;
 }
 
 @layer base {
-  body {
-    @apply bg-gradient-to-r;
-    /* @apply bg-gradient-to-r; */
-    background: var(--background-color);
-    /* background: var(--gradient); */
-    /* background-size: 400% 400%; */
-    /* animation: waveGradient 10s ease infinite; */
-  }
-
-  @keyframes waveGradient {
-    0% {
-      background-position: 100% 50%;
-    }
-    50% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
-  }
-
   h1,
   h2,
   h3,
@@ -75,14 +61,5 @@ html {
 
   li {
     @apply cursor-pointer;
-  }
-
-  #noiseCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
   }
 }

@@ -134,3 +134,25 @@ const Main = () => {
 };
 
 export default Main;
+
+<div className="h-screen w-screen items-center grid grid-cols-1 lg:grid-cols-2 justify-between max-w-[1240xp">
+  <div>
+    <hr />
+    <div className="h-10 flex items-center justify-between pr-10">
+      <p>TEST</p>
+      <p>TEST</p>
+    </div>
+    <hr />
+    <div className="h-10 flex items-center justify-between">
+      <p>TEST</p>
+      <p>TEST</p>
+    </div>
+    <hr />
+    <div className="h-10 flex items-center justify-between">
+      <p>TEST</p>
+      <p>TEST</p>
+    </div>
+
+    <hr />
+  </div>
+</div>;
