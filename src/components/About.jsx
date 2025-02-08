@@ -6,7 +6,7 @@ import TransparentHeader from "./TransparentHeader";
 const About = () => {
   return (
     <>
-      <TransparentHeader />
+      {/* <TransparentHeader /> */}
       <div
         id="about"
         className="h-screen w-screen relative flex justify-center"
@@ -37,8 +37,8 @@ const About = () => {
           <Image
             src={Profile}
             alt="profile picture"
-            width={310}
-            className="absolute bottom-15 left-1/2 -translate-x-1/2"
+            width={350}
+            className="absolute bottom-0 left-1/2 -translate-x-1/2"
           />
         </div>
       </div>
