@@ -32,10 +32,10 @@ body {
 }
 
 [data-theme="dark"] {
-  --background-color: #14150f;
+  --background-color: #3a3939;
   --text-color1: #d9d9d9;
   --text-color2: #cccccc;
-  --highlight-color: #1e90ff;
+  --highlight-color: #c28686;
   --icon-background-color1: #f2e4e4;
   --icon-background-color2: #ffb3ba;
   --navBar-border: #d9d9d9;
@@ -56,7 +56,7 @@ body {
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl;
+    @apply text-2xl sm:text-3xl md:text-4xl;
   }
 
   li {
