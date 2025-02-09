@@ -44,7 +44,7 @@ export default function CV() {
   const [activeId, setActiveId] = useState(null);
 
   return (
-    <div className="flex flex-col relative justify-center items-center mb-15">
+    <div className="flex flex-col relative justify-center items-center mb-20">
       <div className="w-100 sm:w-120 md:hidden px-5">
         {experiences.map((exp) => (
           <ExperienceItem

@@ -88,7 +88,10 @@ const About = () => {
       <div className="flex justify-center min-h-content">
         <div className="relative w-full max-w-[1680px] h-auto grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr] min-h-full items-stretch">
           {/* Linker Container */}
-          <div className="relative hidden md:flex flex-col justify-start items-center md:border-r-2 md:border-b-2 md:border-dotted h-full flex-grow"></div>
+          <div
+            id="end"
+            className="relative hidden md:flex flex-col justify-start items-center md:border-r-2 md:border-b-2 md:border-dotted h-full flex-grow"
+          ></div>
           {/* Rechter Container */}
           <div className="relative flex flex-col items-center h-full flex-grow md:border-b-2 border-dotted">
             <CV />
