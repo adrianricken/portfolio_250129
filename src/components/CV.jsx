@@ -45,9 +45,8 @@ const ExperienceItem = ({
         <span>{isOpen ? "▲" : "▼"}</span>
       </button>
 
-      {/* Inhalt (eingeklappter Zustand: `hidden`) */}
       <div
-        className={`overflow-hidden transition-all duration-300 ${
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${
           isOpen ? "pt-4 pb-4" : "max-h-0"
         }`}
       >

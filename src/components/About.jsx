@@ -17,7 +17,7 @@ const About = () => {
       <div className="flex justify-center min-h-screen">
         <div className="relative w-full max-w-[1680px] min-h-screen grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr] ">
           {/* Linker Container */}
-          <div className="relative flex flex-col items-center pl-5 md:pl-10 pt-10 pr-5 md:shadow-[5px_0_15px_rgba(0,0,0,0.3)]">
+          <div className="relative flex flex-col items-center pl-5 md:pl-10 pt-10 pr-5 md:shadow-[5px_0_15px_0_rgba(0,0,0,0.3)]">
             <h1 className="text-[var(--text-color1)]">
               Hi, ich bin{" "}
               <span className="text-[var(--highlight-color)]">Adrian</span>
@@ -85,20 +85,12 @@ const About = () => {
       </div>
 
       {/* zweiter Abschnitt */}
-      <div className="flex justify-center min-h-screen">
-        <div className="relative w-full max-w-[1680px] min-h-screen grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr] ">
+      <div className="flex justify-center min-h-content">
+        <div className="relative w-full max-w-[1680px] h-auto grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr] min-h-full items-stretch">
           {/* Linker Container */}
-          <div className="relative hidden md:flex flex-col justify-center items-center md:shadow-[5px_0_15px_rgba(0,0,0,0.3)]">
-            <Image
-              src={Home}
-              alt="picture from where i grew up"
-              width={320}
-              className=""
-            />
-            <p className="font-bold">-hier bin ich aufgewachsen-</p>
-          </div>
+          <div className="relative hidden md:flex flex-col justify-start items-center md:shadow-[5px_0_15px_0_rgba(0,0,0,0.3)] h-full flex-grow"></div>
           {/* Rechter Container */}
-          <div className="relative flex justify-center flex-col items-center">
+          <div className="relative flex flex-col items-center my-10 h-full flex-grow">
             <CV />
           </div>
         </div>
