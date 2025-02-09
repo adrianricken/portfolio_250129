@@ -5,11 +5,7 @@ export default function Home() {
   return (
     <>
       <About />
-
-      {/* Lebenslauf */}
-
       <Projects />
-
       {/* Architekturpart */}
     </>
   );
