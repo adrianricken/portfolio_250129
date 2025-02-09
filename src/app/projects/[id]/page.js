@@ -25,9 +25,7 @@ export default async function ProjectDetailPage({ params }) {
 
       <div className="max-w-[1240px] flex flex-col m-auto">
         <div className="container mx-auto px-4">
-          <p className="text-justify block pt-10 text-[var(--text-color1)]">
-            {project.descriptionLong}
-          </p>
+          <p className="text-justify block pt-10">{project.descriptionLong}</p>
 
           <div className="pt-20">
             <div className="container mx-auto px-4">
@@ -70,9 +68,7 @@ export default async function ProjectDetailPage({ params }) {
 
         <div className="text-white py-25">
           <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold mb-6 text-[var(--text-color1)]">
-              Mehr sehen:
-            </h2>
+            <h2 className="text-3xl font-bold mb-6">Mehr sehen:</h2>
 
             <div className="flex justify-center gap-4">
               <a

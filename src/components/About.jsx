@@ -15,16 +15,15 @@ const About = () => {
         <div className="relative w-full max-w-[1680px] min-h-screen grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr]">
           {/* Linker Container */}
           <div className="relative flex flex-col items-center pl-5 md:pl-10 pt-10 pr-5 md:pr-10 md:border-r-2 md:border-dotted">
-            <h1 className="text-[var(--text-color1)]">
+            <h1>
               Hi, ich bin{" "}
               <span className="text-[var(--highlight-color)]">Adrian</span>
             </h1>
             <h2>Junior Frontend Developer</h2>
 
             {/* Contact icons */}
-
-            <div className="w-full flex items-center my-5 justify-between pt-3">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color1)] hover:bg-[var(--highlight-color)]">
+            <div className="w-full flex items-center my-5 justify-between pt-3 text-[var(--icon-text-color)]">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color)] hover:bg-[var(--highlight-color)]">
                 <a
                   href="https://www.linkedin.com/in/adrian-ricken/"
                   target="_blank"
@@ -38,18 +37,18 @@ const About = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color1)] hover:bg-[var(--highlight-color)]">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color)] hover:bg-[var(--highlight-color)]">
                   <FaGithub />
                 </div>
               </a>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  ease-in duration-300 bg-[var(--icon-background-color1)] hover:bg-[var(--highlight-color)]">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color)] hover:bg-[var(--highlight-color)]">
                 <AiOutlineMail />
               </div>
               <a
                 target="blank"
                 href="https://app.enhancv.com/share/7c236387/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
               >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color1)] hover:bg-[var(--highlight-color)]">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color)] hover:bg-[var(--highlight-color)]">
                   <BsFillPersonLinesFill />
                 </div>
               </a>
@@ -72,7 +71,7 @@ const About = () => {
           />
           {/* Rechter Container */}
           <div className="hidden md:flex relative justify-center flex-col items-center md:pr-10 md:pl-10">
-            <p className="w-100 md:w-100 lg:w-150  text-justify leading-relaxed text-xl font-bold text-[var(--text-color1)] md:text-2xl lg:text-3xl absolute sm:top-0 sm:relative">
+            <p className="w-100 md:w-100 lg:w-150  text-justify leading-relaxed text-xl font-bold md:text-2xl lg:text-3xl absolute sm:top-0 sm:relative">
               Design, Struktur und Funktionalität haben mich schon immer
               fasziniert. Mein Architekturstudium hat mir das Denken in
               Systemen, präzise Planung und nutzerzentrierte Gestaltung

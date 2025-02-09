@@ -16,7 +16,7 @@ const ExperienceItem = ({
       {/* Header (Klick zum Ein-/Ausklappen) */}
       <button
         onClick={() => setActiveId(isOpen ? null : id)}
-        className="w-full text-left pt-4 pb-4 flex justify-between items-center hover:bg-gray-200 transition"
+        className="w-full text-left pt-4 pb-4 flex justify-between items-center"
       >
         <span className="font-bold flex justify-between text-lg md:text-xl text-justify leading-relaxed">
           {title}

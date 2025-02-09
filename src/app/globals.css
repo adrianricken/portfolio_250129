@@ -14,6 +14,7 @@ body {
   overflow-x: hidden;
   background-color: var(--background-color);
   scroll-behavior: smooth;
+  color: var(--text-color1);
 }
 
 * {
@@ -26,8 +27,8 @@ body {
   --text-color1: #14150f;
   --text-color2: #53372b;
   --highlight-color: #c28686;
-  --icon-background-color1: #f2e4e4;
-  --icon-background-color2: #ffb3ba;
+  --icon-text-color: #14150f;
+  --icon-background-color: #f2e4e4;
   --navBar-border: #f1eaea;
 }
 
@@ -36,8 +37,8 @@ body {
   --text-color1: #d9d9d9;
   --text-color2: #cccccc;
   --highlight-color: #c28686;
-  --icon-background-color1: #f2e4e4;
-  --icon-background-color2: #ffb3ba;
+  --icon-text-color: #14150f;
+  --icon-background-color: #f2e4e4;
   --navBar-border: #f1eaea;
 }
 

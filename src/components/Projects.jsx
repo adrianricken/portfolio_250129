@@ -53,7 +53,7 @@ const Projects = () => {
                     </p>
                   </div>
                 </div>
-                <div className="md:absolute w-90 h-67.5 sm:w-110 sm:h-82.5 md:w-100 md:h-75 lg:w-150 lg:h-112.5 top-0 bg-amber-200 mb-10">
+                <div className="md:absolute w-90 h-60 sm:w-110 sm:h-73.3 md:w-100 md:h-66.6 lg:w-150 lg:h-80 top-25 bg-amber-200 mb-10">
                   <img
                     src={project.image}
                     alt={project.name}
