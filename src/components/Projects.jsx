@@ -52,7 +52,7 @@ const Projects = () => {
           </div>
           {/* Rechter Container */}
           <div className="relative flex justify-center items-center h-full">
-            <div className="absolute w-90 h-90 sm:w-110 sm:h-110 md:w-100 md:h-100 lg:w-150 lg:h-150 top-10 bg-amber-200"></div>
+            <div className="absolute w-90 h-67.5 sm:w-110 sm:h-82.5 md:w-100 md:h-75 lg:w-150 lg:h-112.5 top-10 bg-amber-200"></div>
           </div>
         </div>
       </div>
