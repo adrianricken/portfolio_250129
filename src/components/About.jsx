@@ -71,7 +71,7 @@ const About = () => {
           />
           {/* Rechter Container */}
           <div className="hidden md:flex relative justify-center flex-col items-center md:pr-10 md:pl-10">
-            <p className="w-100 md:w-100 lg:w-150  text-justify leading-relaxed text-xl font-bold md:text-2xl lg:text-3xl absolute sm:top-0 sm:relative">
+            <p className="w-100 md:w-100 lg:w-150  text-justify leading-relaxed text-xl font-bold md:text-2xl absolute sm:top-0 sm:relative">
               Design, Struktur und Funktionalität haben mich schon immer
               fasziniert. Mein Architekturstudium hat mir das Denken in
               Systemen, präzise Planung und nutzerzentrierte Gestaltung

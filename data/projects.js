@@ -33,11 +33,11 @@ export const projects = [
   },
   {
     id: "art-gallery",
-    name: "Art Gallery App",
+    name: "Art Gallery",
     description:
       "Kunstgallerie-App zum Durchsuchen von Kunstwerken mit Favoritenfunktion.",
     descriptionLong:
-      "Diese Galerie-App zeigt eine Sammlung von Kunstwerken aus einer externen API. Der Fokus liegt dabei auf einer strukturierten und modularen Umsetzung in Next.js, mit besonderem Augenmerk auf das Fetching und die Verwaltung von Zustandsdaten. Ziele der App: Kunstwerke mit Bild und relevanten Informationen aus einer API abrufen und anzeigen. Nutzerinteraktionen ermöglichen, indem zusätzliche Informationen zu Kunstwerken gespeichert werden. Eine gut strukturierte Codebasis mit wiederverwendbaren Komponenten und sauberem Zustandshandling aufbauen. Best Practices in Next.js und React umsetzen, insbesondere beim Laden von Daten und der Handhabung von Bildern mit next/image.",
+      "Diese Galerie-App präsentiert eine Sammlung von Kunstwerken aus einer externen API und legt besonderen Wert auf eine modulare und strukturierte Umsetzung mit Next.js. Der Fokus liegt auf effizientem Daten-Fetching, sauberem Zustandsmanagement und einer optimierten Darstellung der Kunstwerke. Die Codebasis ist klar strukturiert, mit wiederverwendbaren Komponenten und einem durchdachten Zustandshandling. Dabei werden Best Practices in Next.js und React umgesetzt, insbesondere beim Laden von Daten und der effizienten Nutzung von next/image.",
     technologies: ["React", "Next.js"],
     image: "/projects/art-gallery.png",
     github: "https://github.com/adrianricken/adrian-andreas-art-gallery-app",
@@ -65,11 +65,11 @@ export const projects = [
   },
   {
     id: "weather-activities",
-    name: "Weather Activities App",
+    name: "Weather Activities",
     description:
       "App, um Aktivitäten zu speichern und je nach aktuellem Wetter Optionen anzuzeigen.",
     descriptionLong:
-      "Diese App nutzt eine Wetter-API, um basierend auf den aktuellen Wetterbedingungen passende Aktivitäten aus einer vordefinierten Liste vorzuschlagen. Zusätzlich können Nutzer eigene Aktivitäten hinzufügen und löschen. Ziele der App: Wetterdaten von einer API abrufen und in der App verwenden. Basierend auf dem Wetter passende Aktivitäten anzeigen. Nutzern ermöglichen, Aktivitäten zur Liste hinzuzufügen und zu löschen (CRUD-Funktionalität). Die Kernlogik in React umsetzen, insbesondere den Umgang mit Zustand und Benutzerinteraktionen üben. Eine strukturierte Codebasis mit klaren Komponenten und sauberem Zustandshandling erstellen.",
+      "Diese App nutzt eine Wetter-API, um basierend auf den aktuellen Wetterbedingungen passende Aktivitäten vorzuschlagen. Nutzer können ihre eigenen Aktivitäten hinzufügen und löschen. Ziele der App sind das Abrufen und Verwenden von Wetterdaten aus einer API, das Anzeigen von Aktivitäten basierend auf den Wetterbedingungen sowie das Ermöglichen von CRUD-Operationen für Aktivitäten. Die App setzt die Kernlogik in React um, mit besonderem Fokus auf den Umgang mit Zustand und Benutzerinteraktionen.",
     technologies: ["React", "Next.js"],
     image: "/projects/weather-activities.png",
     github: "https://github.com/adrianricken/adrian-paulina-weather-app",

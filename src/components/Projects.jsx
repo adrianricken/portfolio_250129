@@ -31,20 +31,25 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* dynamische Erstellung der Projekt Abschnitte */}
+      {/* dynamische Erstellung Projekte */}
       <div>
         {projects.map((project) => (
-          <div key={project.id} className="flex justify-center min-h-screen">
+          <div key={project.id} className="flex justify-center min-h-content">
             <div className="relative w-full max-w-[1680px] h-auto grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr] min-h-full items-stretch">
               {/* Linker Container */}
               <div className="relative hidden md:flex flex-col justify-start items-center md:border-r-2 border-dotted h-full flex-grow">
-                <h2 className="text-6xl px-10 top-0">{project.name}</h2>
-                <p className="text-justify leading-relaxed px-10 font-bold py-10">
+                <h2
+                  id="projectName"
+                  className="text-6xl px-10 top-0 self-start"
+                >
+                  {project.name}
+                </h2>
+                <p className="text-justify text-xl leading-relaxed px-10 font-bold py-10 pb-40">
                   {project.descriptionLong}
                 </p>
               </div>
               {/* Rechter Container */}
-              <div className="relative flex flex-col justify-around md:justify-center items-center h-full">
+              <div className="relative flex flex-col justify-around md:justify-between items-center h-full">
                 <div className="md:hidden top-0 md:w-100 lg:w-150 font-bold text-xl mt-20 mb-10 text-justify leading-relaxed">
                   <div className="w-90 sm:w-110 md:hidden">
                     <h2 className="text-5xl">{project.name}</h2>
@@ -53,7 +58,8 @@ const Projects = () => {
                     </p>
                   </div>
                 </div>
-                <div className="md:absolute w-90 h-60 sm:w-110 sm:h-73.3 md:w-100 md:h-66.6 lg:w-150 lg:h-80 top-25 bg-amber-200 mb-10">
+
+                <div className="md:absolute w-90 h-60 sm:w-110 sm:h-73.3 md:w-100 md:h-66.6 lg:w-150 lg:h-auto top-25 bg-amber-200 mb-10">
                   <img
                     src={project.image}
                     alt={project.name}
@@ -65,6 +71,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      <div className="h-30 md:hidden"></div>
     </>
   );
 };
