@@ -17,7 +17,7 @@ const About = () => {
       <div className="flex justify-center min-h-screen">
         <div className="relative w-full max-w-[1680px] min-h-screen grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr] ">
           {/* Linker Container */}
-          <div className="relative flex flex-col items-center pl-5 md:pl-10 pt-10 pr-10 shadow-[5px_0_15px_rgba(0,0,0,0.3)]">
+          <div className="relative flex flex-col items-center pl-5 md:pl-10 pt-10 pr-5 md:shadow-[5px_0_15px_rgba(0,0,0,0.3)]">
             <h1 className="text-[var(--text-color1)]">
               Hi, ich bin{" "}
               <span className="text-[var(--highlight-color)]">Adrian</span>
@@ -55,7 +55,7 @@ const About = () => {
                 </div>
               </a>
             </div>
-            <p className="w-100 sm:w-120 md:hidden font-bold text-lg md:text-xl text-justify leading-relaxed pt-5 pl-5 pr-5">
+            <p className="w-100 sm:w-120 md:hidden font-bold text-lg md:text-xl text-justify leading-relaxed mt-5 px-5">
               Design, Struktur und Funktionalität haben mich schon immer
               fasziniert. Mein Architekturstudium hat mir das Denken in
               Systemen, präzise Planung und nutzerzentrierte Gestaltung
@@ -88,17 +88,17 @@ const About = () => {
       <div className="flex justify-center min-h-screen">
         <div className="relative w-full max-w-[1680px] min-h-screen grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr] ">
           {/* Linker Container */}
-          <div className="relative flex flex-col justify-center items-center shadow-[5px_0_15px_rgba(0,0,0,0.3)]">
+          <div className="relative hidden md:flex flex-col justify-center items-center md:shadow-[5px_0_15px_rgba(0,0,0,0.3)]">
             <Image
               src={Home}
               alt="picture from where i grew up"
               width={320}
-              className="hidden md:block"
+              className=""
             />
             <p className="font-bold">-hier bin ich aufgewachsen-</p>
           </div>
           {/* Rechter Container */}
-          <div className="relative flex justify-center pt-10 flex-col items-center md:pr-10">
+          <div className="relative flex justify-center flex-col items-center">
             <CV />
           </div>
         </div>

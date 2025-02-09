@@ -22,13 +22,13 @@ body {
 }
 
 :root {
-  --background-color: #d9d9d9;
+  --background-color: #f1eaea;
   --text-color1: #14150f;
   --text-color2: #53372b;
   --highlight-color: #c28686;
   --icon-background-color1: #f2e4e4;
   --icon-background-color2: #ffb3ba;
-  --navBar-border: #d9d9d9;
+  --navBar-border: #f1eaea;
 }
 
 [data-theme="dark"] {
@@ -38,7 +38,7 @@ body {
   --highlight-color: #c28686;
   --icon-background-color1: #f2e4e4;
   --icon-background-color2: #ffb3ba;
-  --navBar-border: #d9d9d9;
+  --navBar-border: #f1eaea;
 }
 
 @layer base {
