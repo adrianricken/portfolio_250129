@@ -4,7 +4,7 @@ export const projects = [
     name: "Hide and Seek",
     description:
       "Interaktive Plattform zum Erkunden der Berliner Parks mit Fokus auf Sportangebote.",
-    descriptionLong: `Mit meinem Abschlussprojekt Hide and Seek habe ich es mir zum Ziel gesetzt, die öffentlichen Parks in Berlin mit besonderem Fokus auf das sportliche Angebot zu analysieren und darzustellen. Nutzer können gezielt nach Parks filtern, die ihre gewünschte Sportart anbieten, und sich den genauen Standort der Aktivität auf der Detailseite anzeigen lassen. Neben der Filteroption können Parks auch per Texteingabe gesucht und als Favoriten gespeichert werden. Eingeloggte Nutzer können Kommentare hinterlassen. In einem nächsten Schritt soll die Plattform um einen Event-Bereich erweitert werden, um anstehende Veranstaltungen wie Flohmärkte oder Konzerte anzuzeigen.`,
+    descriptionLong: `Mit meinem Abschlussprojekt Hide and Seek habe ich es mir zum Ziel gesetzt, die öffentlichen Parks in Berlin mit besonderem Fokus auf das sportliche Angebot zu analysieren und darzustellen. Nutzer können gezielt nach Parks filtern, die ihre gewünschte Sportart anbieten, und sich den genauen Standort der Aktivität auf der Detailseite anzeigen lassen. Neben der Filteroption können Parks auch per Texteingabe gesucht werden. Eingeloggte Nutzer können außerdem Kommentare hinterlassen. In einem nächsten Schritt soll die Plattform zusätzlich um einen Event-Bereich erweitert werden, um anstehende Veranstaltungen wie Flohmärkte oder Konzerte anzuzeigen.`,
     technologies: ["React", "Next.js", "MongoDB", "Leaflet / OpenStreetMap"],
     image: "/projects/hide-and-seek.png",
     imageDetail: "/projects/hideandseekDetail.png",
@@ -37,7 +37,7 @@ export const projects = [
     description:
       "Kunstgallerie-App zum Durchsuchen von Kunstwerken mit Favoritenfunktion.",
     descriptionLong:
-      "Diese Galerie-App präsentiert eine Sammlung von Kunstwerken aus einer externen API und legt besonderen Wert auf eine modulare und strukturierte Umsetzung mit Next.js. Der Fokus liegt auf effizientem Daten-Fetching, sauberem Zustandsmanagement und einer optimierten Darstellung der Kunstwerke. Die Codebasis ist klar strukturiert, mit wiederverwendbaren Komponenten und einem durchdachten Zustandshandling. Dabei werden Best Practices in Next.js und React umgesetzt, insbesondere beim Laden von Daten und der effizienten Nutzung von next/image.",
+      "Diese Galerie-App präsentiert eine Sammlung von Kunstwerken aus einer externen API und legt besonderen Wert auf eine modulare und strukturierte Umsetzung mit Next.js. Der Fokus liegt auf effizientem Daten-Fetching, sauberem Zustandsmanagement und einer optimierten Darstellung der Kunstwerke.",
     technologies: ["React", "Next.js"],
     image: "/projects/art-gallery.png",
     github: "https://github.com/adrianricken/adrian-andreas-art-gallery-app",
@@ -69,7 +69,7 @@ export const projects = [
     description:
       "App, um Aktivitäten zu speichern und je nach aktuellem Wetter Optionen anzuzeigen.",
     descriptionLong:
-      "Diese App nutzt eine Wetter-API, um basierend auf den aktuellen Wetterbedingungen passende Aktivitäten vorzuschlagen. Nutzer können ihre eigenen Aktivitäten hinzufügen und löschen. Ziele der App sind das Abrufen und Verwenden von Wetterdaten aus einer API, das Anzeigen von Aktivitäten basierend auf den Wetterbedingungen sowie das Ermöglichen von CRUD-Operationen für Aktivitäten. Die App setzt die Kernlogik in React um, mit besonderem Fokus auf den Umgang mit Zustand und Benutzerinteraktionen.",
+      "Diese App nutzt eine (fiktive) API, um basierend auf den Wetterbedingungen passende Aktivitäten vorzuschlagen. Nutzer können ihre eigenen Aktivitäten hinzufügen und löschen.",
     technologies: ["React", "Next.js"],
     image: "/projects/weather-activities.png",
     github: "https://github.com/adrianricken/adrian-paulina-weather-app",

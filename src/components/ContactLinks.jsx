@@ -2,11 +2,12 @@ import React from "react";
 
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+
+const email = process.env.NEXT_PUBLIC_EMAIL;
 
 const ContactLinks = () => {
   return (
-    <div className="w-full flex items-center my-5 justify-between pt-3 text-[var(--icon-text-color)]">
+    <div className="w-full flex items-center my-5 justify-between text-[var(--icon-text-color)]">
       <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color)] hover:bg-[var(--highlight-color)]">
         <a
           href="https://www.linkedin.com/in/adrian-ricken/"
@@ -25,15 +26,9 @@ const ContactLinks = () => {
           <FaGithub />
         </div>
       </a>
-      <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color)] hover:bg-[var(--highlight-color)]">
-        <AiOutlineMail />
-      </div>
-      <a
-        target="blank"
-        href="https://app.enhancv.com/share/7c236387/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
-      >
+      <a href={`mailto:${email}`}>
         <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color)] hover:bg-[var(--highlight-color)]">
-          <BsFillPersonLinesFill />
+          <AiOutlineMail />
         </div>
       </a>
     </div>

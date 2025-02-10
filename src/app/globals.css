@@ -23,10 +23,10 @@ body {
 }
 
 :root {
-  --background-color: #f1eaea;
+  --background-color: #ffffff;
   --text-color1: #14150f;
   --text-color2: #53372b;
-  --highlight-color: #c28686;
+  --highlight-color: #ff7900;
   --icon-text-color: #14150f;
   --icon-background-color: #f2e4e4;
   --navBar-border: #f1eaea;
@@ -36,7 +36,7 @@ body {
   --background-color: #3a3939;
   --text-color1: #d9d9d9;
   --text-color2: #cccccc;
-  --highlight-color: #c28686;
+  --highlight-color: #ff7900;
   --icon-text-color: #14150f;
   --icon-background-color: #f2e4e4;
   --navBar-border: #f1eaea;
