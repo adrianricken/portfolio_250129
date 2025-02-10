@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <About />
       <Projects />
       {/* Architekturpart */}
+      <Contact />
     </>
   );
 }

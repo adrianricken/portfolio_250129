@@ -19,7 +19,7 @@ const NavBar = () => {
         Projekte
       </Link>
       <Link
-        href="/#skills"
+        href="/#contact"
         className="transition duration-300 hover:text-white hover:[text-shadow:0_0_10px_rgba(255,255,255,0.8)] mr-3"
       >
         Kontakt

@@ -12,9 +12,11 @@ const Projects = () => {
             <div className="relative hidden md:flex flex-col justify-start items-center h-full flex-grow"></div>
             <div className="w-100 sm:w-120 md:hidden text-lg text-justify leading-relaxed font-bold px-5">
               <p className="">
-                Hier eine Auwahl der Projekte, die ich während dem Bootcamp
-                bearbeitet sss s habe, asdoifbasobdf boa sdboiubsudoaf budf
-                buoasdf bo:
+                Nachfolgend eine Auswahl von Projekten, die ich während meines
+                Web Development Bootcamps (mit)entwickelt habe. Jedes Projekt
+                spiegelt verschiedene Technologien, Konzepte und
+                Herausforderungen wider, mit denen ich mich intensiv beschäftigt
+                habe.
               </p>
             </div>
           </div>
@@ -22,9 +24,11 @@ const Projects = () => {
           <div className="hidden md:flex relative justify-center flex-col items-center md:pr-10 md:pl-10">
             <div className="w-100 md:w-100 lg:w-150 font-bold text-xl mt-20 mb-20 text-justify leading-relaxed">
               <p>
-                Hier eine Auwahl der Projekte, die ich während dem Bootcamp
-                bearbeitet sss s habe, asdoifbasobdf boa sdboiubsudoaf budf
-                buoasdf bo:
+                Nachfolgend eine Auswahl von Projekten, die ich während meines
+                Web Development Bootcamps (mit)entwickelt habe. Jedes Projekt
+                spiegelt verschiedene Technologien, Konzepte und
+                Herausforderungen wider, mit denen ich mich intensiv beschäftigt
+                habe.
               </p>
             </div>
           </div>
@@ -32,7 +36,7 @@ const Projects = () => {
       </div>
 
       {/* dynamische Erstellung Projekte */}
-      <div>
+      <div className="border-b-2 border-dotted">
         {projects.map((project) => (
           <div key={project.id} className="flex justify-center min-h-content">
             <div className="relative w-full max-w-[1680px] h-auto grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr] min-h-full items-stretch">
@@ -59,19 +63,34 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <div className="md:absolute w-90 h-60 sm:w-110 sm:h-73.3 md:w-100 md:h-66.6 lg:w-150 lg:h-auto top-25 bg-amber-200 mb-10">
+                <div className="md:absolute w-90 h-60 sm:w-110 sm:h-73.3 md:w-100 md:h-66.6 lg:w-150 lg:h-auto top-25 mb-10">
                   <img
                     src={project.image}
                     alt={project.name}
                     className="object-cover w-full h-full"
                   />
+                  <div className="relative w-full flex justify-around p-10">
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      className="bg-[rgba(0,0,0,0.1)] backdrop-blur-[10px] rounded-4xl z-100 shadow-1 p-5 border-0 shadow-md shadow-gray-400 hover:shadow-none"
+                    >
+                      Deployed Version
+                    </a>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      className="bg-[rgba(0,0,0,0.1)] backdrop-blur-[10px] rounded-4xl z-100 shadow-1 p-5 border-0 shadow-md shadow-gray-400 hover:shadow-none"
+                    >
+                      GitHub Repo
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div className="h-30 md:hidden"></div>
     </>
   );
 };

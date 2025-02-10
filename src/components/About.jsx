@@ -3,10 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import Profile from "../../public/assets/profile_normal.png";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import CV from "./CV";
+import ContactLinks from "./ContactLinks";
 
 const About = () => {
   return (
@@ -19,40 +17,9 @@ const About = () => {
               Hi, ich bin{" "}
               <span className="text-[var(--highlight-color)]">Adrian</span>
             </h1>
-            <h2>Junior Frontend Developer</h2>
+            <h2>Junior Web Developer</h2>
 
-            {/* Contact icons */}
-            <div className="w-full flex items-center my-5 justify-between pt-3 text-[var(--icon-text-color)]">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color)] hover:bg-[var(--highlight-color)]">
-                <a
-                  href="https://www.linkedin.com/in/adrian-ricken/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaLinkedinIn className="text-[var(--icon-color)]" />
-                </a>
-              </div>
-              <a
-                href="https://github.com/adrianricken"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color)] hover:bg-[var(--highlight-color)]">
-                  <FaGithub />
-                </div>
-              </a>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color)] hover:bg-[var(--highlight-color)]">
-                <AiOutlineMail />
-              </div>
-              <a
-                target="blank"
-                href="https://app.enhancv.com/share/7c236387/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
-              >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color)] hover:bg-[var(--highlight-color)]">
-                  <BsFillPersonLinesFill />
-                </div>
-              </a>
-            </div>
+            <ContactLinks />
 
             <p className="w-100 sm:w-120 md:hidden font-bold text-lg md:text-xl text-justify leading-relaxed mt-5 px-5">
               Design, Struktur und Funktionalität haben mich schon immer
