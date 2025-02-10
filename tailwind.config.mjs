@@ -6,4 +6,9 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [require("tailwindcss-animate")],
+  theme: {
+    screens: {
+      md: "815px",
+    },
+  },
 };

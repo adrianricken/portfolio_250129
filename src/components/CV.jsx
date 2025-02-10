@@ -46,6 +46,9 @@ export default function CV() {
   return (
     <div className="flex flex-col relative justify-center items-center mb-20">
       <div className="w-100 sm:w-120 md:hidden px-5">
+        <p className="text-[var(--highlight-color)] font-bold text-xl pb-5 pt-10">
+          Meine bisherigen Stationen
+        </p>
         {experiences.map((exp) => (
           <ExperienceItem
             key={exp.id}
@@ -75,7 +78,7 @@ export default function CV() {
           <a
             target="blank"
             href="https://app.enhancv.com/share/7c236387/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
-            className="text-lg font-bold"
+            className="text-lg font-bold hover:text-gray-400"
           >
             👉 ausführliches CV 👈
           </a>

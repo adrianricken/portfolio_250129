@@ -1,5 +1,6 @@
 import React from "react";
 import { projects } from "../../data/projects";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -49,24 +50,6 @@ const Projects = () => {
                 >
                   {project.name}
                 </h2>
-
-                {/* Links unter dem Titel */}
-                <div className="flex flex-col items-center px-10 py-5 space-y-4">
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    className="bg-[rgba(0,0,0,0.1)] backdrop-blur-[10px] rounded-4xl z-1 shadow-1 p-5 border-0 shadow-md shadow-gray-400 hover:shadow-none font-bold text-xl"
-                  >
-                    Deployed Version
-                  </a>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    className="bg-[rgba(0,0,0,0.1)] backdrop-blur-[10px] rounded-4xl z-1 shadow-1 p-5 border-0 shadow-md shadow-gray-400 hover:shadow-none font-bold text-xl"
-                  >
-                    GitHub Repo
-                  </a>
-                </div>
               </div>
 
               {/* RECHTER CONTAINER */}
@@ -96,6 +79,24 @@ const Projects = () => {
                     alt={project.name}
                     className="object-cover w-full h-full shadow-lg shadow-gray-400"
                   />
+                </div>
+                <div className="flex items-center w-full justify-center pb-20">
+                  <div className="inline-flex text-lg text-[var(--icon-text-color)]">
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      className="bg-[var(--icon-background-color)] px-5 py-3 rounded-l-4xl border-r hover:bg-[var(--highlight-color)]"
+                    >
+                      <FaGlobe />
+                    </a>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      className="bg-[var(--icon-background-color)] px-5 py-3 rounded-r-4xl hover:bg-[var(--highlight-color)]"
+                    >
+                      <FaGithub />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

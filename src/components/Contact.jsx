@@ -3,7 +3,7 @@ import ContactLinks from "./ContactLinks";
 
 const Contact = () => {
   return (
-    <div className="flex justify-center h-1/2">
+    <div id="contact" className="flex justify-center h-1/2">
       <div className="relative w-full max-w-[1680px] grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr]">
         {/* Linker Container */}
         <div className="relative hidden md:flex flex-col items-center md:border-r-2 md:border-dotted"></div>
