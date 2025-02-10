@@ -15,7 +15,7 @@ const Contact = () => {
             <br />
             Melde dich gerne!
           </p>
-          <div className="w-150">
+          <div className="w-100 md:w-100 lg:w-150">
             <ContactLinks />
           </div>
         </div>
