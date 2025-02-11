@@ -21,7 +21,7 @@ const About = () => {
               <span className="text-[var(--highlight-color)]">Adrian</span>
             </h1>
             <h2 className="md:self-start md:text-3xl">Junior Web Developer</h2>
-            <div className="w-full px-7">
+            <div className="md:w-full w-100 sm:w-120 px-10 md:px-0">
               <ContactLinks />
             </div>
 
