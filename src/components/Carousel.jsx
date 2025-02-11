@@ -6,7 +6,7 @@ import Slider from "react-slick";
 
 export default function Carousel({ images }) {
   let settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -16,7 +16,7 @@ export default function Carousel({ images }) {
   return (
     <div className="h-full w-full">
       <div className="w-full h-full m-auto">
-        <Slider {...settings} className="z-100 h-full w-full">
+        <Slider {...settings} className="z-1 h-full w-full">
           {/* Dynamisch gerenderte Bilder aus dem images-Array */}
           {images.map((image, index) => (
             <div key={index} className="w-full h-full bg-white">

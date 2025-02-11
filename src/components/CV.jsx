@@ -13,7 +13,6 @@ const ExperienceItem = ({
 
   return (
     <div className="border-b border-gray-300">
-      {/* Header (Klick zum Ein-/Ausklappen) */}
       <button
         onClick={() => setActiveId(isOpen ? null : id)}
         className="w-full text-left pt-4 pb-4 flex justify-between items-center"
@@ -44,8 +43,8 @@ export default function CV() {
   const [activeId, setActiveId] = useState(null);
 
   return (
-    <div className="flex flex-col relative justify-center items-center mb-20">
-      <div className="w-100 sm:w-120 md:hidden px-5">
+    <div className="flex flex-col relative justify-center items-center">
+      <div className="w-100 sm:w-120 md:hidden px-10 mt-20">
         <p className="text-[var(--highlight-color)] font-bold text-xl pb-5 md:pt-10">
           Meine bisherigen Stationen
         </p>
