@@ -1,18 +1,21 @@
+"use client";
+
 import React from "react";
 import { projects } from "../../data/projects";
 import { FaGithub, FaGlobe } from "react-icons/fa";
+import Carousel from "./Carousel";
 
 const Projects = () => {
   return (
     <>
-      {/* erster Abschnitt */}
       <div id="projects" className="flex justify-center min-h-content">
+        {/* erster Abschnitt */}
         <div className="relative w-full max-w-[1680px] min-h-content grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr] ">
           {/* Linker Container */}
           <div className="relative h-full flex justify-center items-center md:border-r-2 md:border-b-2 md:border-dotted md:m-0">
             <div className="hidden md:flex flex-col justify-start items-center h-full flex-grow"></div>
-            <div className="w-100 sm:w-120 md:hidden text-lg text-justify leading-relaxed font-bold px-5">
-              <p>
+            <div className="w-100 sm:w-120 md:hidden text-lg text-justify leading-relaxed font-bold">
+              <p className="px-5">
                 Hier eine Auswahl von Projekten, die ich während meines Web
                 Development Bootcamps (mit)entwickelt habe. Jedes Projekt
                 spiegelt verschiedene Technologien, Konzepte und
@@ -60,10 +63,10 @@ const Projects = () => {
                     {project.name}
                   </h2>
                   <p className="text-justify leading-relaxed font-bold pt-5">
-                    {project.descriptionLong}
+                    {project.description}
                   </p>
                   <img
-                    src={project.image}
+                    src={project.images[0]}
                     alt={project.name}
                     className="object-cover w-full h-full"
                   />
@@ -72,13 +75,11 @@ const Projects = () => {
                 {/* größere Bildschirme */}
                 <div className="hidden md:flex md:flex-col w-100 lg:w-150 font-bold text-xl sm:w-110 sm:h-73.3 md:h-66.6 lg:h-auto py-20">
                   <p className="text-justify text-xl font-bold leading-relaxed pb-10">
-                    {project.descriptionLong}
+                    {project.description}
                   </p>
-                  <img
-                    src={project.image}
-                    alt={project.name}
-                    className="object-cover w-full h-full shadow-lg shadow-gray-400"
-                  />
+                  <div className="hidden md:flex md:flex-col w-100 md:w-110 lg:w-150 shadow-2xl">
+                    <Carousel images={project.images} />
+                  </div>
                 </div>
                 <div className="flex items-center w-full justify-center pb-20">
                   <div className="inline-flex text-lg text-[var(--icon-text-color)]">
@@ -98,6 +99,7 @@ const Projects = () => {
                     </a>
                   </div>
                 </div>
+                <div></div>
               </div>
             </div>
           </div>

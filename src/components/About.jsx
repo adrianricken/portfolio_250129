@@ -5,6 +5,7 @@ import Image from "next/image";
 import Profile from "../../public/assets/profile_normal.png";
 import CV from "./CV";
 import ContactLinks from "./ContactLinks";
+import Carousel from "./Carousel";
 
 const About = () => {
   return (
@@ -12,16 +13,17 @@ const About = () => {
       <div className="flex justify-center min-h-screen">
         <div className="relative w-full max-w-[1680px] min-h-screen grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr]">
           {/* Linker Container */}
-          <div className="relative flex flex-col items-center pl-5 md:pl-15 pt-10 md:pt-15 pr-5 md:pr-15 md:border-r-2 md:border-dotted">
+          <div className="relative flex flex-col items-center md:pl-15 pt-10 md:pt-15 md:pr-15 md:border-r-2 md:border-dotted">
             <h1 className="md:text-5xl md:self-start">
               Hi, ich bin{" "}
               <span className="text-[var(--highlight-color)]">Adrian</span>
             </h1>
             <h2 className="md:self-start md:text-3xl">Junior Web Developer</h2>
+            <div className="w-full px-7">
+              <ContactLinks />
+            </div>
 
-            <ContactLinks />
-
-            <p className="w-100 sm:w-120 md:hidden font-bold text-lg md:text-xl text-justify leading-relaxed mt-5 px-5">
+            <p className="w-100 sm:w-120 md:hidden font-bold text-lg md:text-xl text-justify leading-relaxed mt-5 px-10">
               Design, Struktur und Funktionalität haben mich schon immer
               fasziniert. Mein Architekturstudium hat mir das Denken in
               Systemen, präzise Planung und nutzerzentrierte Gestaltung
@@ -37,7 +39,7 @@ const About = () => {
             alt="profile picture"
             width={320}
             height={320} // Setze eine Höhe hinzu
-            className="absolute bottom-10 left-1/2 md:left-1/5 lg:left-1/6 -translate-x-1/2"
+            className="hidden md:block absolute bottom-10 left-1/2 md:left-1/5 lg:left-1/6 -translate-x-1/2"
           />
 
           {/* Rechter Container */}
@@ -65,7 +67,9 @@ const About = () => {
 
           {/* Rechter Container */}
           <div className="relative flex flex-col items-center h-full flex-grow md:border-b-2 border-dotted">
-            <CV />
+            <div>
+              <CV />
+            </div>
           </div>
         </div>
       </div>

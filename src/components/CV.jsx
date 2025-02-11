@@ -46,7 +46,7 @@ export default function CV() {
   return (
     <div className="flex flex-col relative justify-center items-center mb-20">
       <div className="w-100 sm:w-120 md:hidden px-5">
-        <p className="text-[var(--highlight-color)] font-bold text-xl pb-5 pt-10">
+        <p className="text-[var(--highlight-color)] font-bold text-xl pb-5 md:pt-10">
           Meine bisherigen Stationen
         </p>
         {experiences.map((exp) => (
