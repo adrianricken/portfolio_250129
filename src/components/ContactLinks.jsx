@@ -26,7 +26,7 @@ const ContactLinks = () => {
           <FaGithub />
         </div>
       </a>
-      <a href={`mailto:${email}`}>
+      <a href={`mailto:adrianricken@gmail.com`}>
         <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer ease-in duration-300 bg-[var(--icon-background-color)] hover:bg-[var(--highlight-color)]">
           <AiOutlineMail />
         </div>
