@@ -15,7 +15,7 @@ const Projects = () => {
           <div className="relative h-full flex justify-center items-center md:border-r-2 md:border-b-2 md:border-dotted">
             <div className="hidden md:flex flex-col justify-start items-center h-full flex-grow"></div>
             <div className="w-100 sm:w-120 md:hidden text-lg text-justify leading-relaxed font-bold mt-20">
-              <p className="px-8">
+              <p className="px-10">
                 Hier eine Auswahl von Projekten, die ich während meines Web
                 Development Bootcamps (mit)entwickelt habe. Jedes Projekt
                 spiegelt verschiedene Technologien, Konzepte und
@@ -79,7 +79,7 @@ const Projects = () => {
                     <ProjectsCarousel images={project.images} />
                   </div>
                 </div>
-                <div className="flex items-center w-full justify-center md:mb-20 px-10">
+                <div className="flex items-center w-full justify-center mb-5 md:mb-20 px-10">
                   <div className="inline-flex text-lg text-[var(--icon-text-color)]">
                     <a
                       href={project.demo}

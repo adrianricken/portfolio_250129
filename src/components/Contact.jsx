@@ -8,12 +8,6 @@ const Contact = () => {
         {/* Linker Container */}
         <div className="relative h-full flex justify-center items-center md:border-r-2 md:border-b-2 md:border-dotted">
           <div className="hidden md:flex flex-col justify-start items-center h-full flex-grow"></div>
-          <div className="w-100 sm:w-120 md:hidden text-lg text-justify leading-relaxed font-bold mt-20">
-            <p className="px-8">
-              Lust auf einen Austausch oder Fragen zu meinen Projekten? Melde
-              dich gerne!
-            </p>
-          </div>
         </div>
 
         {/* Rechter Container */}
