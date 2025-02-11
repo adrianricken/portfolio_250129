@@ -13,9 +13,10 @@ const Projects = () => {
         <div className="relative w-full max-w-[1680px] min-h-content grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr] ">
           {/* Linker Container */}
           <div className="relative h-full flex justify-center items-center md:border-r-2 md:border-b-2 md:border-dotted">
+            {/* leeres div links ab md */}
             <div className="hidden md:flex flex-col justify-start items-center h-full flex-grow"></div>
-            <div className="w-100 sm:w-120 md:hidden text-lg text-justify leading-relaxed font-bold mt-20">
-              <p className="px-10">
+            <div className="w-100 sm:w-110 md:w-100 md:hidden text-lg text-justify leading-relaxed font-bold mt-20 px-10">
+              <p>
                 Hier eine Auswahl von Projekten, die ich während meines Web
                 Development Bootcamps (mit)entwickelt habe. Jedes Projekt
                 spiegelt verschiedene Technologien, Konzepte und
@@ -59,7 +60,7 @@ const Projects = () => {
               <div className="relative flex flex-col justify-around md:justify-between items-center h-auto md:border-b-2 md:border-dotted">
                 {/* kleinere Bildschirme */}
                 <div className="relative md:hidden w-100 sm:w-120 lg:w-150 font-bold text-xl mt-20 mb-10 text-justify leading-relaxed px-10">
-                  <h2 className="text-5xl text-[var(--highlight-color)]">
+                  <h2 className="text-4xl text-[var(--highlight-color)]">
                     {project.name}
                   </h2>
                   <p className="text-justify leading-relaxed font-bold pt-10 pb-10">
