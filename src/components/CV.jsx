@@ -73,13 +73,13 @@ export default function CV() {
             setActiveId={setActiveId}
           />
         ))}
-        <div className="w-full pt-10 flex justify-center items-center">
+        <div className="w-full pt-10 flex justify-start items-center">
           <a
             target="blank"
             href="https://app.enhancv.com/share/7c236387/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
-            className="text-lg font-bold hover:text-gray-400"
+            className="text-lg font-bold hover:text-[var(--highlight-color)]"
           >
-            👉 ausführliches CV 👈
+            &rarr; detailliertes CV
           </a>
         </div>
       </div>

@@ -13,9 +13,8 @@ const Contact = () => {
         {/* Rechter Container */}
         <div className="relative flex flex-col justify-center items-center w-full p-10">
           <p className="w-100 sm:w-120 md:w-100 lg:w-150 text-xl text-justify leading-relaxed px-10 md:px-0 font-bold">
-            Lust auf einen Austausch oder Fragen zu meinen Projekten?
-            <br />
-            Melde dich gerne!
+            Fragen, Kommentare oder Anregungen gerne über eine der folgenden
+            Optionen:
           </p>
           <div className="w-100 sm:w-120 md:w-100 lg:w-150 px-10 md:px-0 mb-10">
             <ContactLinks />

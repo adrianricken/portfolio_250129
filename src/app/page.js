@@ -7,7 +7,7 @@ import TransparentHeader from "@/components/TransparentHeader";
 export default function Home() {
   return (
     <>
-      <TransparentHeader />
+      {/* <TransparentHeader /> */}
       <About />
       <Projects />
       {/* Architekturpart */}

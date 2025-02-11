@@ -30,8 +30,8 @@ const Projects = () => {
           <div className="hidden md:flex relative justify-center flex-col items-center md:pr-10 md:pl-10 md:border-b-2 md:border-dotted">
             <div className="w-100 md:w-100 lg:w-150 font-bold text-xl mt-20 mb-20 text-justify leading-relaxed">
               <p>
-                Hier eine Auswahl von Projekten, die ich während meines Web
-                Development Bootcamps (mit)entwickelt habe. Jedes Projekt
+                Nachfolgend eine Auswahl von Projekten, die ich während meines
+                Web Development Bootcamps (mit)entwickelt habe. Jedes Projekt
                 spiegelt verschiedene Technologien, Konzepte und
                 Herausforderungen wider, mit denen ich mich intensiv beschäftigt
                 habe :
@@ -98,7 +98,9 @@ const Projects = () => {
                     </a>
                   </div>
                 </div>
-                <div></div>
+                <div className="md:hidden w-full pt-5 px-10">
+                  <hr className="border-dotted border-w-2" />
+                </div>
               </div>
             </div>
           </div>

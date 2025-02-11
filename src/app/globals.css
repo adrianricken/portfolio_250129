@@ -14,10 +14,10 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: var(--background-color);
   scroll-behavior: smooth;
-  color: var(--text-color1);
+  color: var(--text-color);
   font-family: "Montserrat", sans-serif;
+  background: var(--background-color);
 }
 
 * {
@@ -27,22 +27,18 @@ body {
 
 :root {
   --background-color: #ffffff;
-  --text-color1: #14150f;
-  --text-color2: #53372b;
+  --text-color: #14150f;
   --highlight-color: #ff0000;
   --icon-text-color: #14150f;
   --icon-background-color: #f2e4e4;
-  --navBar-border: #f1eaea;
 }
 
 [data-theme="dark"] {
   --background-color: #0000009b;
-  --text-color1: #d9d9d9;
-  --text-color2: #cccccc;
+  --text-color: #d9d9d9;
   --highlight-color: #ff0000;
   --icon-text-color: #14150f;
   --icon-background-color: #f2e4e4;
-  --navBar-border: #f1eaea;
 }
 
 @layer base {
