@@ -58,7 +58,7 @@ const Projects = () => {
               {/* RECHTER CONTAINER */}
               <div className="relative flex flex-col justify-around md:justify-between items-center h-auto md:border-b-2 md:border-dotted">
                 {/* kleinere Bildschirme */}
-                <div className="relative md:hidden w-100 lg:w-150 font-bold text-xl mt-20 mb-10 text-justify leading-relaxed px-10">
+                <div className="relative md:hidden w-100 sm:w-120 lg:w-150 font-bold text-xl mt-20 mb-10 text-justify leading-relaxed px-10">
                   <h2 className="text-5xl text-[var(--highlight-color)]">
                     {project.name}
                   </h2>
@@ -75,11 +75,11 @@ const Projects = () => {
                   <p className="text-justify text-xl font-bold leading-relaxed pb-10">
                     {project.description}
                   </p>
-                  <div className="hidden md:flex md:flex-col w-100 sm:w-120 md:w-110 lg:w-150 shadow-2xl">
+                  <div className="hidden md:flex md:flex-col w-100 sm:w-120 md:w-100 lg:w-150 shadow-2xl">
                     <Carousel images={project.images} />
                   </div>
                 </div>
-                <div className="flex items-center w-full justify-center md:mb-20">
+                <div className="flex items-center w-full justify-center md:mb-20 px-10">
                   <div className="inline-flex text-lg text-[var(--icon-text-color)]">
                     <a
                       href={project.demo}
