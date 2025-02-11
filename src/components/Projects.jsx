@@ -79,7 +79,7 @@ const Projects = () => {
                     <Carousel images={project.images} />
                   </div>
                 </div>
-                <div className="flex items-center w-full justify-center">
+                <div className="flex items-center w-full justify-center md:mb-20">
                   <div className="inline-flex text-lg text-[var(--icon-text-color)]">
                     <a
                       href={project.demo}
