@@ -7,8 +7,10 @@ module.exports = {
   ],
   plugins: [require("tailwindcss-animate")],
   theme: {
-    screens: {
-      md: "815px",
+    extend: {
+      screens: {
+        md: "815px",
+      },
     },
   },
 };
