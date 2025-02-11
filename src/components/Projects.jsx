@@ -3,7 +3,7 @@
 import React from "react";
 import { projects } from "../../data/projects";
 import { FaGithub, FaGlobe } from "react-icons/fa";
-import Carousel from "./Carousel";
+import ProjectsCarousel from "./ProjectsCarousel";
 
 const Projects = () => {
   return (
@@ -66,7 +66,7 @@ const Projects = () => {
                     {project.description}
                   </p>
                   <div className="shadow-lg">
-                    <Carousel images={project.images} />
+                    <ProjectsCarousel images={project.images} />
                   </div>
                 </div>
 
@@ -76,7 +76,7 @@ const Projects = () => {
                     {project.description}
                   </p>
                   <div className="hidden md:flex md:flex-col w-100 sm:w-120 md:w-100 lg:w-150 shadow-2xl">
-                    <Carousel images={project.images} />
+                    <ProjectsCarousel images={project.images} />
                   </div>
                 </div>
                 <div className="flex items-center w-full justify-center md:mb-20 px-10">

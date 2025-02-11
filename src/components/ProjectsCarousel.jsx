@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import Slider from "react-slick";
 
-export default function Carousel({ images }) {
+export default function ProjectsCarousel({ images }) {
   let settings = {
     dots: false,
     infinite: true,
