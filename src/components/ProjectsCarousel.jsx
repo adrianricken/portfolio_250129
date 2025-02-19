@@ -17,7 +17,6 @@ export default function ProjectsCarousel({ images }) {
     <div className="h-full w-full">
       <div className="w-full h-full m-auto">
         <Slider {...settings} className="z-1 h-full w-full">
-          {/* Dynamisch gerenderte Bilder aus dem images-Array */}
           {images.map((image, index) => (
             <div key={index} className="w-full h-full bg-white">
               <div className="w-full h-full">
