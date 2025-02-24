@@ -6,7 +6,7 @@ const Contact = () => {
     <div id="contact" className="flex justify-center h-1/2">
       <div className="relative w-full max-w-[1680px] grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr]">
         {/* Linker Container */}
-        <div className="relative h-full flex justify-center items-center md:border-r-2 md:border-b-2 md:border-dotted">
+        <div className="relative h-full flex justify-center items-center md:border-r-2 md:border-dotted">
           <div className="hidden md:flex flex-col justify-start items-center h-full flex-grow"></div>
         </div>
 
