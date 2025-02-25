@@ -2,8 +2,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 
 export const metadata = {
-  title: "Betreten erwünscht",
-  // description: "Auszüge aus meinem Schaffen",
+  title: "betreten erbeten",
 };
 
 export default function RootLayout({ children }) {
