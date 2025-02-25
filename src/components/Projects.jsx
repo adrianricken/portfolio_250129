@@ -8,14 +8,21 @@ import ProjectsCarousel from "./ProjectsCarousel";
 const Projects = () => {
   return (
     <>
-      <div id="projects" className="flex justify-center min-h-content">
+      <div
+        id="projects"
+        className="flex justify-center min-h-content md:border-b-2 border-dotted"
+      >
         {/* erster Abschnitt */}
-        <div className="relative w-full max-w-[1680px] min-h-content grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr] ">
+        <div className="relative w-full max-w-[1680px] min-h-content grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr]">
           {/* Linker Container */}
-          <div className="relative h-full flex justify-center items-center md:border-r-2 md:border-b-2 md:border-dotted">
+          <div className="relative h-full flex justify-center items-center md:border-r-2 border-dotted">
             {/* leeres div links ab md */}
             <div className="hidden md:flex flex-col justify-start items-center h-full flex-grow"></div>
-            <div className="w-100 sm:w-110 md:w-100 md:hidden text-lg text-justify leading-relaxed font-bold mt-20 px-10">
+            <div
+              id="problem"
+              className="w-100 sm:w-120 md:hidden text-lg text-justify leading-relaxed font-bold mt-20 px-10"
+            >
+              <p className="w-100 sm:w-120 md:hidden font-bold text-lg md:text-xl text-justify leading-relaxed mt-10 px-10"></p>
               <p>
                 Hier eine Auswahl von Projekten, die ich während meines Web
                 Development Bootcamps (mit)entwickelt habe. Jedes Projekt
@@ -27,11 +34,11 @@ const Projects = () => {
           </div>
 
           {/* Rechter Container */}
-          <div className="hidden md:flex relative justify-center flex-col items-center md:pr-10 md:pl-10 md:border-b-2 md:border-dotted">
+          <div className="hidden md:flex relative justify-center flex-col items-center md:pr-10 md:pl-10">
             <div className="w-100 md:w-100 lg:w-150 font-bold text-xl mt-20 mb-20 text-justify leading-relaxed">
               <p>
-                Nachfolgend eine Auswahl von Projekten, die ich während meines
-                Web Development Bootcamps (mit)entwickelt habe. Jedes Projekt
+                Hier eine Auswahl von Projekten, die ich während meines Web
+                Development Bootcamps (mit)entwickelt habe. Jedes Projekt
                 spiegelt verschiedene Technologien, Konzepte und
                 Herausforderungen wider, mit denen ich mich intensiv beschäftigt
                 habe :
@@ -44,10 +51,13 @@ const Projects = () => {
       {/* dynamische Erstellung Projekte */}
       <div>
         {projects.map((project) => (
-          <div key={project.id} className="flex justify-center min-h-content">
+          <div
+            key={project.id}
+            className="flex justify-center min-h-content md:border-b-2 border-dotted"
+          >
             <div className="relative w-full max-w-[1680px] h-auto grid grid-cols-1 md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_2fr] min-h-full items-stretch">
               {/* LINKER CONTAINER */}
-              <div className="relative flex flex-col justify-start items-center md:pt-20 md:border-r-2 md:border-b-2 md:border-dotted h-full flex-grow">
+              <div className="relative flex flex-col justify-start items-center md:pt-20 md:border-r-2 border-dotted h-full flex-grow">
                 <h2
                   id="projectName"
                   className="hidden md:block text-5xl px-10 top-0 text-[var(--highlight-color)]"
@@ -57,7 +67,7 @@ const Projects = () => {
               </div>
 
               {/* RECHTER CONTAINER */}
-              <div className="relative flex flex-col justify-around md:justify-between items-center h-auto md:border-b-2 md:border-dotted">
+              <div className="relative flex flex-col justify-around md:justify-between items-center h-auto">
                 {/* kleinere Bildschirme */}
                 <div className="relative md:hidden w-100 sm:w-120 lg:w-150 font-bold text-xl mt-20 mb-10 text-justify leading-relaxed px-10">
                   <h2 className="text-4xl text-[var(--highlight-color)]">
